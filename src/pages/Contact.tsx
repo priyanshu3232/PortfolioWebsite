@@ -37,13 +37,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+91 74171 42824',
+      details: '+1 (555) 123-4567',
       description: 'Mon-Fri from 8am to 5pm',
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: 'Dehradun, Uttarahkhand',
+      details: 'New York, NY',
       description: 'Come say hello at our office',
     },
     {
@@ -60,10 +60,10 @@ const Contact = () => {
       <section className="bg-gradient-to-br from-purple-50 to-pink-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Contact <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Us</span>
+            Contact Farsight Media<span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Us</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Ready to scale your business? Let's discuss your goals and create a custom strategy that drives real results.
+            Ready to scale your business with Farsight Media? Let's discuss your goals and create a custom strategy that drives real results.
           </p>
         </div>
       </section>
