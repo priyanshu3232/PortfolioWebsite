@@ -12,7 +12,7 @@ const TestimonialSlider = () => {
       position: 'CEO, TechStart Inc.',
       company: 'TechStart Inc.',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      quote: 'CreativeGrowth transformed our digital presence completely. Our ROI increased by 300% in just 6 months. Their team is incredibly professional and results-driven.',
+      quote: 'Farsight Media transformed our digital presence completely. Our ROI increased by 300% in just 6 months. Their team is incredibly professional and results-driven.',
       rating: 5,
     },
     {
