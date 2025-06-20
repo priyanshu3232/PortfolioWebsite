@@ -45,7 +45,7 @@ const Header = () => {
               <Heart className="w-8 h-8 text-pink-600 group-hover:text-purple-600 transition-colors duration-300" />
             </div>
             <span className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
-              CreativeGrowth
+              Farsight Media
             </span>
           </Link>
 
