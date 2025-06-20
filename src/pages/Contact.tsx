@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'hello@creativegrowth.com',
+      details: 'hello@farsightmedia.com',
       description: 'Send us an email anytime',
     },
     {
