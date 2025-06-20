@@ -25,7 +25,7 @@ const Hero = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Scale your brand with a{' '}
                 <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  creative growth agency
+                  Farsight Media
                 </span>
               </h1>
               
