@@ -37,13 +37,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
+      details: '+91 74171 42824',
       description: 'Mon-Fri from 8am to 5pm',
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: 'New York, NY',
+      details: 'Dehradun, Uttarahkhand',
       description: 'Come say hello at our office',
     },
     {
