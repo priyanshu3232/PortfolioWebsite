@@ -39,22 +39,12 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
-            {/* Logo Image */}
-            <img
-              src="/Final Logo-Nobg.png"
-              alt="Farsight Media Logo"
-              className="w-10 h-10 lg:w-12 lg:h-12 object-contain transition-transform duration-300 group-hover:scale-110"
-            />
-            
-            {/* Heart Icons */}
+          <Link to="/" className="flex items-center space-x-2 group">
             <div className="flex items-center space-x-1">
-              <Heart className="w-6 h-6 lg:w-8 lg:h-8 text-purple-600 group-hover:text-pink-600 transition-colors duration-300" />
-              <Heart className="w-6 h-6 lg:w-8 lg:h-8 text-pink-600 group-hover:text-purple-600 transition-colors duration-300" />
+              <Heart className="w-8 h-8 text-purple-600 group-hover:text-pink-600 transition-colors duration-300" />
+              <Heart className="w-8 h-8 text-pink-600 group-hover:text-purple-600 transition-colors duration-300" />
             </div>
-            
-            {/* Company Name */}
-            <span className="text-lg lg:text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+            <span className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
               Farsight Media
             </span>
           </Link>
