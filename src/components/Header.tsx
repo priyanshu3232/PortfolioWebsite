@@ -39,11 +39,7 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="flex items-center space-x-1">
-              <Heart className="w-8 h-8 text-purple-600 group-hover:text-pink-600 transition-colors duration-300" />
-              <Heart className="w-8 h-8 text-pink-600 group-hover:text-purple-600 transition-colors duration-300" />
-            </div>
+          <Link to="/" className="flex items-center">
             <span className="text-xl font-bold">
               <span className="text-gray-600">Farsight</span>
               <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">Media</span>
