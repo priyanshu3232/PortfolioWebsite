@@ -40,14 +40,15 @@ const Header = () => {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="flex items-center space-x-1">
-              <Heart className="w-8 h-8 text-purple-600 group-hover:text-pink-600 transition-colors duration-300" />
-              <Heart className="w-8 h-8 text-pink-600 group-hover:text-purple-600 transition-colors duration-300" />
-            </div>
-            <span className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
-              Farsight Media
-            </span>
-          </Link>
+  <img 
+    src="/Final Logo-Nobg.png" 
+    alt="Farsight Media Logo" 
+    className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
+  />
+  <span className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
+    Farsight Media
+  </span>
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
