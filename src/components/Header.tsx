@@ -39,16 +39,18 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-          <img>
-    src="/Final Logo-Nobg.png" 
-    alt="Farsight Media Logo" 
-    className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
-  </img>
-  <span className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
-    Farsight Media
-  </span>
-</Link>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img 
+              src="/Final Logo-Nobg.png" 
+              alt="Farsight Media Logo" 
+              className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
+            />
+            <span className={`text-xl font-bold transition-colors duration-300 group-hover:text-purple-600 ${
+              isScrolled ? 'text-gray-900' : 'text-gray-900'
+            }`}>
+              Farsight Media
+            </span>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -77,7 +79,9 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-purple-600 transition-colors duration-300"
+            className={`lg:hidden p-2 rounded-md transition-colors duration-300 hover:text-purple-600 ${
+              isScrolled ? 'text-gray-700' : 'text-gray-700'
+            }`}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
