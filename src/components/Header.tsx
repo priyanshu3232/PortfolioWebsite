@@ -40,11 +40,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-  <img 
+          <img>
     src="/Final Logo-Nobg.png" 
     alt="Farsight Media Logo" 
     className="h-10 w-auto group-hover:scale-105 transition-transform duration-300"
-  />
+  </img>
   <span className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-300">
     Farsight Media
   </span>
