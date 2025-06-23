@@ -8,12 +8,11 @@ const TestimonialSlider = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      position: 'CEO, TechStart Inc.',
-      company: 'TechStart Inc.',
+      name: 'Ranjan Bhattacharya',
+      position: 'CEO, Ranjan Bhattacharya Photography.',
+      company: 'Ranjan Bhattacharya Photography',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      quote: 'Farsight Media transformed our digital presence completely. Our ROI increased by 300% in just 6 months. Their team is incredibly professional and results-driven.',
-      rating: 5,
+      quote: 'I partnered with Farsight Media to refine my brand vision and streamline workflows. In three months, I saw a 50% rise in bookings across Kolkata and Mumbai, stronger client engagement, and revenue growth. Their strategic insights transformed my photography business.,
     },
     {
       id: 2,
