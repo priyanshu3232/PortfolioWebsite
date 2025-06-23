@@ -60,12 +60,12 @@ const OurWork = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-50 to-pink-50 py-20">
+      <section className="bg-gradient-to-br from-stone-50 to-amber-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Work</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">
+            Our <span className="bg-gradient-to-r from-stone-600 to-amber-700 bg-clip-text text-transparent">Work</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-stone-600 max-w-3xl mx-auto mb-8">
             Discover how we've helped businesses like yours achieve remarkable growth through strategic digital marketing campaigns.
           </p>
         </div>
@@ -90,31 +90,31 @@ const OurWork = () => {
                 
                 <div className="flex-1 space-y-6">
                   <div>
-                    <div className="inline-block bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <div className="inline-block bg-stone-100 text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
                       {study.category}
                     </div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4">{study.title}</h3>
-                    <p className="text-lg text-gray-600 mb-6">{study.description}</p>
+                    <h3 className="text-3xl font-bold text-stone-900 mb-4">{study.title}</h3>
+                    <p className="text-lg text-stone-600 mb-6">{study.description}</p>
                   </div>
                   
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     {study.results.map((result, resultIndex) => (
-                      <div key={resultIndex} className="text-center p-4 bg-gray-50 rounded-xl">
-                        <result.icon className="w-6 h-6 text-purple-600 mx-auto mb-2" />
-                        <div className="text-2xl font-bold text-gray-900">{result.value}</div>
-                        <div className="text-sm text-gray-600">{result.metric}</div>
+                      <div key={resultIndex} className="text-center p-4 bg-stone-50 rounded-xl">
+                        <result.icon className="w-6 h-6 text-stone-600 mx-auto mb-2" />
+                        <div className="text-2xl font-bold text-stone-900">{result.value}</div>
+                        <div className="text-sm text-stone-600">{result.metric}</div>
                       </div>
                     ))}
                   </div>
                   
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Challenge:</h4>
-                      <p className="text-gray-600">{study.challenge}</p>
+                      <h4 className="font-semibold text-stone-900 mb-2">Challenge:</h4>
+                      <p className="text-stone-600">{study.challenge}</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Solution:</h4>
-                      <p className="text-gray-600">{study.solution}</p>
+                      <h4 className="font-semibold text-stone-900 mb-2">Solution:</h4>
+                      <p className="text-stone-600">{study.solution}</p>
                     </div>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const OurWork = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+      <section className="py-20 bg-gradient-to-r from-stone-700 to-amber-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

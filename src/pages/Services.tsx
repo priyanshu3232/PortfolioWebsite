@@ -16,7 +16,7 @@ const Services = () => {
         'Detailed performance reporting',
         'Conversion tracking setup'
       ],
-      color: 'bg-blue-500',
+      color: 'bg-stone-600',
       price: 'Starting at $1,500/month',
     },
     {
@@ -31,7 +31,7 @@ const Services = () => {
         'Pixel implementation',
         'Custom audience creation'
       ],
-      color: 'bg-blue-600',
+      color: 'bg-stone-700',
       price: 'Starting at $1,200/month',
     },
     {
@@ -46,7 +46,7 @@ const Services = () => {
         'Post scheduling and management',
         'Local citation building'
       ],
-      color: 'bg-green-500',
+      color: 'bg-amber-700',
       price: 'Starting at $500/month',
     },
     {
@@ -61,7 +61,7 @@ const Services = () => {
         'Social media advertising',
         'Analytics and reporting'
       ],
-      color: 'bg-purple-500',
+      color: 'bg-stone-500',
       price: 'Starting at $800/month',
     },
     {
@@ -76,7 +76,7 @@ const Services = () => {
         'LinkedIn advertising',
         'B2B outreach automation'
       ],
-      color: 'bg-blue-700',
+      color: 'bg-amber-600',
       price: 'Starting at $1,000/month',
     },
   ];
@@ -84,12 +84,12 @@ const Services = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-purple-50 to-pink-50 py-20">
+      <section className="bg-gradient-to-br from-stone-50 to-amber-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Services</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">
+            Our <span className="bg-gradient-to-r from-stone-600 to-amber-700 bg-clip-text text-transparent">Services</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-stone-600 max-w-3xl mx-auto mb-8">
             Comprehensive digital marketing solutions designed to scale your business and drive measurable results.
           </p>
         </div>
@@ -110,14 +110,14 @@ const Services = () => {
                   </div>
                   
                   <div>
-                    <h3 className="text-3xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                    <p className="text-lg text-gray-600 mb-6">{service.description}</p>
-                    <div className="text-2xl font-bold text-purple-600 mb-6">{service.price}</div>
+                    <h3 className="text-3xl font-bold text-stone-900 mb-4">{service.title}</h3>
+                    <p className="text-lg text-stone-600 mb-6">{service.description}</p>
+                    <div className="text-2xl font-bold text-stone-600 mb-6">{service.price}</div>
                   </div>
                   
                   <Link
                     to="/contact"
-                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-stone-600 to-amber-700 text-white font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                   >
                     Get Started
                     <ArrowRight className="ml-2 w-4 h-4" />
@@ -125,13 +125,13 @@ const Services = () => {
                 </div>
                 
                 <div className="flex-1">
-                  <div className="bg-gray-50 rounded-2xl p-8">
-                    <h4 className="text-xl font-bold text-gray-900 mb-6">What's Included:</h4>
+                  <div className="bg-stone-50 rounded-2xl p-8">
+                    <h4 className="text-xl font-bold text-stone-900 mb-6">What's Included:</h4>
                     <ul className="space-y-4">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-start space-x-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{feature}</span>
+                          <CheckCircle className="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-stone-700">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -144,7 +144,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+      <section className="py-20 bg-gradient-to-r from-stone-700 to-amber-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Scale Your Business?
@@ -154,7 +154,7 @@ const Services = () => {
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center px-8 py-4 bg-white text-purple-600 font-semibold rounded-full hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center px-8 py-4 bg-white text-stone-600 font-semibold rounded-full hover:bg-stone-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
           >
             Schedule Free Consultation
             <ArrowRight className="ml-2 w-5 h-5" />

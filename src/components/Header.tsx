@@ -24,12 +24,12 @@ const Header = () => {
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+      isScrolled ? 'bg-stone-50/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       {/* Brand Logos Banner - Mobile Only */}
-      <div className="lg:hidden bg-gradient-to-r from-purple-600 to-pink-600 py-2">
+      <div className="lg:hidden bg-gradient-to-r from-stone-600 to-stone-700 py-2">
         <div className="flex justify-center space-x-6 overflow-x-auto px-4">
-          <div className="flex items-center space-x-2 text-white text-sm font-medium whitespace-nowrap">
+          <div className="flex items-center space-x-2 text-stone-100 text-sm font-medium whitespace-nowrap">
             <Heart className="w-4 h-4" />
             <span>Trusted Partners</span>
           </div>
@@ -41,8 +41,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <span className="text-xl font-bold">
-              <span className="text-gray-600">Farsight</span>
-              <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">Media</span>
+              <span className="text-stone-700">Farsight</span>
+              <span className="bg-gradient-to-r from-stone-600 to-amber-700 bg-clip-text text-transparent">Media</span>
             </span>
           </Link>
 
@@ -52,19 +52,19 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-all duration-300 hover:text-purple-600 relative group ${
+                className={`text-sm font-medium transition-all duration-300 hover:text-stone-600 relative group ${
                   location.pathname === item.href
-                    ? 'text-purple-600'
-                    : isScrolled ? 'text-gray-900' : 'text-gray-700'
+                    ? 'text-stone-600'
+                    : isScrolled ? 'text-stone-800' : 'text-stone-700'
                 }`}
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-stone-600 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
             <Link
               to="/contact"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-stone-600 to-amber-700 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               Get Started
             </Link>
@@ -73,7 +73,7 @@ const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-purple-600 transition-colors duration-300"
+            className="lg:hidden p-2 rounded-md text-stone-700 hover:text-stone-600 transition-colors duration-300"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -81,15 +81,15 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t">
+          <div className="lg:hidden absolute top-full left-0 w-full bg-stone-50 shadow-xl border-t">
             <div className="px-4 py-6 space-y-4">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block text-base font-medium transition-colors duration-300 hover:text-purple-600 ${
-                    location.pathname === item.href ? 'text-purple-600' : 'text-gray-900'
+                  className={`block text-base font-medium transition-colors duration-300 hover:text-stone-600 ${
+                    location.pathname === item.href ? 'text-stone-600' : 'text-stone-800'
                   }`}
                 >
                   {item.name}
@@ -98,7 +98,7 @@ const Header = () => {
               <Link
                 to="/contact"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-center bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300"
+                className="block w-full text-center bg-gradient-to-r from-stone-600 to-amber-700 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300"
               >
                 Get Started
               </Link>
