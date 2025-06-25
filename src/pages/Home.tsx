@@ -7,7 +7,7 @@ import CallToAction from '../components/CallToAction';
 
 const Home = () => {
   return (
-    <div className="pt-16 lg:pt-20">
+    <div className="pt-16 lg:pt-20 bg-custom-beige">
       <BrandsBanner />
       <Hero />
       <ServicesPreview />

@@ -53,12 +53,12 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-custom-beige">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-stone-50 to-amber-50 py-20">
+      <section className="bg-custom-beige py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">
-            About <span className="bg-gradient-to-r from-stone-600 to-amber-700 bg-clip-text text-transparent">Us</span>
+            About <span className="text-custom-red">Us</span>
           </h1>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto mb-8">
             We're a team of passionate digital marketing experts dedicated to helping businesses achieve extraordinary growth through innovative strategies and measurable results.
@@ -81,12 +81,12 @@ const About = () => {
                 We combine cutting-edge technology with human creativity to deliver campaigns that not only drive results but also build lasting relationships between brands and their customers.
               </p>
               <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-4 bg-stone-50 rounded-xl">
-                  <div className="text-3xl font-bold text-stone-600">5+</div>
+                <div className="text-center p-4 bg-custom-beige rounded-xl">
+                  <div className="text-3xl font-bold text-custom-red">5+</div>
                   <div className="text-sm text-stone-600">Years Experience</div>
                 </div>
-                <div className="text-center p-4 bg-amber-50 rounded-xl">
-                  <div className="text-3xl font-bold text-amber-700">200+</div>
+                <div className="text-center p-4 bg-custom-beige rounded-xl">
+                  <div className="text-3xl font-bold text-custom-red">200+</div>
                   <div className="text-sm text-stone-600">Happy Clients</div>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-stone-50">
+      <section className="py-20 bg-custom-beige">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
@@ -120,7 +120,7 @@ const About = () => {
                 key={value.title}
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center"
               >
-                <div className="w-16 h-16 bg-gradient-to-r from-stone-600 to-amber-700 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-16 h-16 bg-custom-red rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-stone-900 mb-4">{value.title}</h3>
@@ -156,7 +156,7 @@ const About = () => {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-stone-900 mb-2">{member.name}</h3>
-                  <p className="text-stone-600 font-medium mb-4">{member.position}</p>
+                  <p className="text-custom-red font-medium mb-4">{member.position}</p>
                   <p className="text-stone-600 text-sm leading-relaxed">{member.bio}</p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-stone-700 to-amber-800">
+      <section className="py-20 bg-custom-red">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Work Together?
@@ -176,7 +176,7 @@ const About = () => {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-white text-stone-600 font-semibold rounded-full hover:bg-stone-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            className="inline-flex items-center px-8 py-4 bg-white text-custom-red font-semibold rounded-full hover:bg-stone-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
           >
             Get in Touch
           </a>

@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2 group">
               <div className="flex items-center space-x-1">
-                <Heart className="w-6 h-6 text-stone-400 group-hover:text-amber-400 transition-colors duration-300" />
-                <Heart className="w-6 h-6 text-amber-400 group-hover:text-stone-400 transition-colors duration-300" />
+                <Heart className="w-6 h-6 text-stone-400 group-hover:text-custom-red transition-colors duration-300" />
+                <Heart className="w-6 h-6 text-custom-red group-hover:text-stone-400 transition-colors duration-300" />
               </div>
               <span className="text-lg font-bold group-hover:text-stone-400 transition-colors duration-300">
                 Farsight Media
@@ -22,16 +22,16 @@ const Footer = () => {
               We blend paid media and micro-influencer marketing to create campaigns you can measure.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-stone-400 hover:text-stone-400 transition-colors duration-300">
+              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-stone-400 hover:text-stone-400 transition-colors duration-300">
+              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-stone-400 hover:text-stone-400 transition-colors duration-300">
+              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-stone-400 hover:text-stone-400 transition-colors duration-300">
+              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -42,22 +42,22 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services" className="text-stone-300 hover:text-stone-400 transition-colors duration-300 text-sm">
+                <Link to="/services" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-stone-400 transition-colors duration-300 text-sm">
+                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
                   Our Work
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-stone-300 hover:text-stone-400 transition-colors duration-300 text-sm">
+                <Link to="/about" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-stone-300 hover:text-stone-400 transition-colors duration-300 text-sm">
+                <Link to="/contact" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
                   Contact Us
                 </Link>
               </li>
@@ -86,11 +86,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-stone-400" />
-                <span className="text-sm text-stone-300">+1 (555) 123-4567</span>
+                <span className="text-sm text-stone-300">+91 74171 42824</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-stone-400" />
-                <span className="text-sm text-stone-300">New York, NY</span>
+                <span className="text-sm text-stone-300">Dehradun, Uttarakhand</span>
               </div>
             </div>
           </div>
@@ -101,10 +101,10 @@ const Footer = () => {
             © 2025 Farsight Media. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-sm text-stone-400 hover:text-stone-400 transition-colors duration-300">
+            <a href="#" className="text-sm text-stone-400 hover:text-custom-red transition-colors duration-300">
               Privacy Policy
             </a>
-            <a href="#" className="text-sm text-stone-400 hover:text-stone-400 transition-colors duration-300">
+            <a href="#" className="text-sm text-stone-400 hover:text-custom-red transition-colors duration-300">
               Terms of Service
             </a>
           </div>

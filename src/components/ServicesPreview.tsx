@@ -22,8 +22,8 @@ const ServicesPreview = () => {
       icon: MapPin,
       title: 'Google Business Profile',
       description: 'Optimize your local presence and attract more customers through Google Business.',
-      color: 'bg-amber-700',
-      hoverColor: 'group-hover:bg-amber-800',
+      color: 'bg-custom-red',
+      hoverColor: 'group-hover:bg-red-700',
     },
     {
       icon: Share2,
@@ -36,8 +36,8 @@ const ServicesPreview = () => {
       icon: Linkedin,
       title: 'LinkedIn Marketing',
       description: 'Connect with professionals and generate B2B leads through strategic LinkedIn campaigns.',
-      color: 'bg-amber-600',
-      hoverColor: 'group-hover:bg-amber-700',
+      color: 'bg-stone-400',
+      hoverColor: 'group-hover:bg-stone-500',
     },
   ];
 
@@ -46,7 +46,7 @@ const ServicesPreview = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-            Our <span className="bg-gradient-to-r from-stone-600 to-amber-700 bg-clip-text text-transparent">Services</span>
+            Our <span className="text-custom-red">Services</span>
           </h2>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto">
             We offer comprehensive digital marketing solutions to help your business grow and thrive in the digital landscape.
@@ -62,7 +62,7 @@ const ServicesPreview = () => {
               <div className={`w-16 h-16 ${service.color} ${service.hoverColor} rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300`}>
                 <service.icon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-stone-900 mb-4 group-hover:text-stone-600 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-stone-900 mb-4 group-hover:text-custom-red transition-colors duration-300">
                 {service.title}
               </h3>
               <p className="text-stone-600 leading-relaxed">
@@ -75,7 +75,7 @@ const ServicesPreview = () => {
         <div className="text-center">
           <Link
             to="/services"
-            className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-stone-600 to-amber-700 text-white font-semibold rounded-full hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            className="group inline-flex items-center px-8 py-4 bg-custom-red text-white font-semibold rounded-full hover:bg-red-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
           >
             View All Services
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

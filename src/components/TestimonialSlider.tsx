@@ -68,11 +68,11 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section className="py-20 bg-custom-beige">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Clients Say</span>
+            What Our <span className="text-custom-red">Clients Say</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Don't just take our word for it. Here's what our satisfied clients have to say about working with us.
@@ -95,7 +95,7 @@ const TestimonialSlider = () => {
                   />
                   <div>
                     <h4 className="text-lg font-bold text-gray-900">{testimonial.name}</h4>
-                    <p className="text-purple-600 font-medium">{testimonial.position}</p>
+                    <p className="text-custom-red font-medium">{testimonial.position}</p>
                     <p className="text-gray-500 text-sm">{testimonial.company}</p>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const TestimonialSlider = () => {
                 </div>
                 
                 <div className="relative">
-                  <Quote className="absolute -top-2 -left-2 w-8 h-8 text-purple-200" />
+                  <Quote className="absolute -top-2 -left-2 w-8 h-8 text-custom-red/20" />
                   <p className="text-gray-700 leading-relaxed pl-6 italic">
                     "{testimonial.quote}"
                   </p>
@@ -127,7 +127,7 @@ const TestimonialSlider = () => {
                 />
                 <div>
                   <h4 className="text-lg font-bold text-gray-900">{testimonials[currentSlide].name}</h4>
-                  <p className="text-purple-600 font-medium">{testimonials[currentSlide].position}</p>
+                  <p className="text-custom-red font-medium">{testimonials[currentSlide].position}</p>
                   <p className="text-gray-500 text-sm">{testimonials[currentSlide].company}</p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const TestimonialSlider = () => {
               </div>
               
               <div className="relative">
-                <Quote className="absolute -top-2 -left-2 w-8 h-8 text-purple-200" />
+                <Quote className="absolute -top-2 -left-2 w-8 h-8 text-custom-red/20" />
                 <p className="text-gray-700 leading-relaxed pl-6 italic">
                   "{testimonials[currentSlide].quote}"
                 </p>
@@ -153,7 +153,7 @@ const TestimonialSlider = () => {
               onClick={prevSlide}
               onMouseEnter={() => setIsAutoPlaying(false)}
               onMouseLeave={() => setIsAutoPlaying(true)}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-purple-600 hover:text-purple-700 transition-all duration-300 transform hover:scale-110"
+              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-custom-red hover:text-red-700 transition-all duration-300 transform hover:scale-110"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -164,7 +164,7 @@ const TestimonialSlider = () => {
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    index === currentSlide ? 'bg-purple-600 w-8' : 'bg-gray-300 hover:bg-purple-400'
+                    index === currentSlide ? 'bg-custom-red w-8' : 'bg-gray-300 hover:bg-custom-red/50'
                   }`}
                 />
               ))}
@@ -174,7 +174,7 @@ const TestimonialSlider = () => {
               onClick={nextSlide}
               onMouseEnter={() => setIsAutoPlaying(false)}
               onMouseLeave={() => setIsAutoPlaying(true)}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-purple-600 hover:text-purple-700 transition-all duration-300 transform hover:scale-110"
+              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl text-custom-red hover:text-red-700 transition-all duration-300 transform hover:scale-110"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
