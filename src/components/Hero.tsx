@@ -2,12 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Play, TrendingUp, Users, Target } from 'lucide-react';
 
-// Import images from src/assets
-import fourSeasonsLogo from '../assets/4 seasons photography.png';
-import amitKheraLogo from '../assets/amit khera logo.png';
-import ranjanaBhatacharjeeLogo from '../assets/ranjana bhatacharjee photography logo.png';
-import weddingSagaLogo from '../assets/wedding saga india.png';
-
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-custom-beige overflow-hidden">
@@ -86,7 +80,7 @@ const Hero = () => {
                 {/* 4 Seasons Photography */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img 
-                    src={fourSeasonsLogo} 
+                    src="/assets/4 seasons photography.png" 
                     alt="4 Seasons Photography" 
                     className="h-12 w-auto object-contain"
                   />
@@ -95,7 +89,7 @@ const Hero = () => {
                 {/* Amit Khera */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img 
-                    src={amitKheraLogo} 
+                    src="/assets/amit khera logo.png" 
                     alt="Amit Khera" 
                     className="h-12 w-auto object-contain"
                   />
@@ -104,7 +98,7 @@ const Hero = () => {
                 {/* Ranjana Bhatacharjee Photography */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img 
-                    src={ranjanaBhatacharjeeLogo} 
+                    src="/assets/ranjana bhatacharjee photography logo.png" 
                     alt="Ranjana Bhatacharjee Photography" 
                     className="h-12 w-auto object-contain"
                   />
@@ -113,7 +107,7 @@ const Hero = () => {
                 {/* Wedding Saga India */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img 
-                    src={weddingSagaLogo} 
+                    src="/assets/wedding saga india.png" 
                     alt="Wedding Saga India" 
                     className="h-12 w-auto object-contain"
                   />
