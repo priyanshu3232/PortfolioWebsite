@@ -74,28 +74,28 @@ const Hero: React.FC = () => {
               <div className="grid grid-cols-2 gap-8 items-center justify-items-center">
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
-                    src="/assets/4-seasons-photography.png"
+                    src="/assets/4 seasons photography.png"
                     alt="4 Seasons Photography"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
-                    src="/assets/amit-khera-logo.png"
+                    src="/assets/amit khera logo.png"
                     alt="Amit Khera"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
-                    src="/assets/ranjana-bhatacharjee-logo.png"
+                    src="/assets/ranjana bhatacharjee photography.png"
                     alt="Ranjana Bhatacharjee Photography"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
-                    src="/assets/wedding-saga-india.png"
+                    src="/assets/wedding saga india.png"
                     alt="Wedding Saga India"
                     className="h-12 w-auto object-contain"
                   />
