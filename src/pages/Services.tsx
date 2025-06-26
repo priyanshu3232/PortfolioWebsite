@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Facebook, MapPin, Share2, Linkedin, CheckCircle, ArrowRight } from 'lucide-react';
+import { Search, Facebook, Building2, Hash, Linkedin, CheckCircle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Services = () => {
@@ -35,7 +35,7 @@ const Services = () => {
       price: 'Starting at $1,200/month',
     },
     {
-      icon: MapPin,
+      icon: Building2,
       title: 'Google Business Profile Optimization',
       description: 'Optimize your local presence and attract more customers through Google Business.',
       features: [
@@ -50,7 +50,7 @@ const Services = () => {
       price: 'Starting at $500/month',
     },
     {
-      icon: Share2,
+      icon: Hash,
       title: 'Social Media Management',
       description: 'Build brand awareness and engage your community across all social platforms.',
       features: [

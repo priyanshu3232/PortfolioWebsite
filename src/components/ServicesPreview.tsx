@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Facebook, MapPin, Share2, Linkedin, ArrowRight } from 'lucide-react';
+import { Search, Facebook, Building2, Hash, Linkedin, ArrowRight } from 'lucide-react';
 
 const ServicesPreview = () => {
   const services = [
@@ -19,14 +19,14 @@ const ServicesPreview = () => {
       hoverColor: 'group-hover:bg-stone-800',
     },
     {
-      icon: MapPin,
+      icon: Building2,
       title: 'Google Business Profile',
       description: 'Optimize your local presence and attract more customers through Google Business.',
       color: 'bg-custom-red',
       hoverColor: 'group-hover:bg-red-700',
     },
     {
-      icon: Share2,
+      icon: Hash,
       title: 'Social Media Management',
       description: 'Build brand awareness and engage your community across all social platforms.',
       color: 'bg-stone-500',
