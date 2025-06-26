@@ -71,34 +71,38 @@ const Hero: React.FC = () => {
               </div>
 
               {/* Company Logos Grid */}
-              <div className="grid grid-cols-2 gap-8 items-center justify-items-center">
-                <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
+              <div className="grid grid-cols-2 gap-6 items-center justify-items-center">
+                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
                   <img
                     src="/assets/4 seasons photography.png"
                     alt="4 Seasons Photography"
-                    className="h-12 w-auto object-contain"
+                    className="h-16 w-auto object-contain mb-3"
                   />
+                  <span className="text-xs font-medium text-stone-700 text-center">4 Seasons Photography</span>
                 </div>
-                <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
+                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
                   <img
                     src="/assets/amit khera logo.png"
-                    alt="Amit Khera"
-                    className="h-12 w-auto object-contain"
+                    alt="Amit Khera Photography"
+                    className="h-16 w-auto object-contain mb-3"
                   />
+                  <span className="text-xs font-medium text-stone-700 text-center">Amit Khera Photography</span>
                 </div>
-                <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
+                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
                   <img
                     src="/assets/ranjana bhatacharjee photography.png"
                     alt="Ranjana Bhatacharjee Photography"
-                    className="h-12 w-auto object-contain"
+                    className="h-16 w-auto object-contain mb-3"
                   />
+                  <span className="text-xs font-medium text-stone-700 text-center">Ranjana Bhatacharjee Photography</span>
                 </div>
-                <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
+                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
                   <img
                     src="/assets/wedding saga india.png"
-                    alt="Wedding Saga India"
-                    className="h-12 w-auto object-contain"
+                    alt="Wedding Saga"
+                    className="h-16 w-auto object-contain mb-3"
                   />
+                  <span className="text-xs font-medium text-stone-700 text-center">Wedding Saga</span>
                 </div>
               </div>
 
