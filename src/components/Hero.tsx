@@ -2,13 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Play, TrendingUp, Users, Target } from 'lucide-react';
 
-// Import images from assets - adjust path based on your structure
-import fourSeasonsLogo from '../../assets/4 seasons photography.png';
-import amitKheraLogo from '../../assets/amit khera logo.png';
-import ranjanaBhatacharjeeLogo from '../../assets/ranjana bhatacharjee photography logo.png';
-import weddingSagaLogo from '../../assets/wedding saga india.png';
-
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center bg-custom-beige overflow-hidden">
       {/* Background Elements */}
@@ -27,16 +21,12 @@ const Hero = () => {
                 <TrendingUp className="w-4 h-4" />
                 <span>Scale Your Brand Today</span>
               </div>
-              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight">
                 Scale your brand with a{' '}
-                <span className="text-custom-red">
-                  Farsight Media
-                </span>
+                <span className="text-custom-red">Farsight Media</span>
               </h1>
-              
               <p className="text-xl text-stone-600 leading-relaxed max-w-2xl">
-                We blend paid media and micro-influencer marketing to create campaigns you can measure. 
+                We blend paid media and micro-influencer marketing to create campaigns you can measure.
                 Drive real results with data-driven strategies that scale.
               </p>
             </div>
@@ -49,7 +39,6 @@ const Hero = () => {
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
-              
               <button className="group inline-flex items-center justify-center px-8 py-4 border-2 border-stone-400 text-stone-700 font-semibold rounded-full hover:border-custom-red hover:text-custom-red transition-all duration-300">
                 <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                 Watch Demo
@@ -80,46 +69,39 @@ const Hero = () => {
                 <h3 className="text-2xl font-bold text-stone-900 mb-2">Trusted by Leading Brands</h3>
                 <p className="text-stone-600">Join hundreds of successful companies</p>
               </div>
-              
+
               {/* Company Logos Grid */}
               <div className="grid grid-cols-2 gap-8 items-center justify-items-center">
-                {/* 4 Seasons Photography */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
-                  <img 
-                    src={fourSeasonsLogo} 
-                    alt="4 Seasons Photography" 
+                  <img
+                    src="/assets/4-seasons-photography.png"
+                    alt="4 Seasons Photography"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
-
-                {/* Amit Khera */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
-                  <img 
-                    src={amitKheraLogo} 
-                    alt="Amit Khera" 
+                  <img
+                    src="/assets/amit-khera-logo.png"
+                    alt="Amit Khera"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
-
-                {/* Ranjana Bhatacharjee Photography */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
-                  <img 
-                    src={ranjanaBhatacharjeeLogo} 
-                    alt="Ranjana Bhatacharjee Photography" 
+                  <img
+                    src="/assets/ranjana-bhatacharjee-logo.png"
+                    alt="Ranjana Bhatacharjee Photography"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
-
-                {/* Wedding Saga India */}
                 <div className="flex items-center justify-center p-4 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
-                  <img 
-                    src={weddingSagaLogo} 
-                    alt="Wedding Saga India" 
+                  <img
+                    src="/assets/wedding-saga-india.png"
+                    alt="Wedding Saga India"
                     className="h-12 w-auto object-contain"
                   />
                 </div>
               </div>
-              
+
               {/* Floating Cards */}
               <div className="absolute -top-6 -left-6 bg-white p-4 rounded-xl shadow-lg border animate-bounce">
                 <div className="flex items-center space-x-3">
@@ -132,7 +114,6 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              
               <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg border animate-bounce delay-1000">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-stone-100 rounded-full flex items-center justify-center">
@@ -145,7 +126,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Background Decoration */}
             <div className="absolute inset-0 bg-custom-red rounded-2xl transform rotate-6 scale-105 opacity-20"></div>
           </div>
