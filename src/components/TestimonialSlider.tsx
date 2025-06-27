@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, Quote, Calendar, Instagram } from 'lucide-react';
 
 const TestimonialSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -10,26 +10,27 @@ const TestimonialSlider = () => {
       id: 1,
       name: 'Mr. Afroj Haider',
       position: 'Founder, Wedding Saga India',
-      company: 'TechStart Inc.',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      quote: 'We started ads with a modest budget of ₹5,000, and within a month, we had over 10 quality leads in our target city. The targeting and ad creatives were spot-on. As someone who is  cautious with marketing spends, I was impressed with the returns we got so early on.',
+      company: 'Wedding Saga India',
+      image: '/assets/alfroj wedding saga.png',
+      quote: 'We started ads with a modest budget of ₹5,000, and within a month, we had over 10 quality leads in our target city. The targeting and ad creatives were spot-on. As someone who is cautious with marketing spends, I was impressed with the returns we got so early on.',
       rating: 5,
     },
     {
       id: 2,
       name: 'OPS Jewels',
       position: 'Team OPS Jewels',
-      company: 'E-commerce Plus',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+      company: 'OPS Jewels',
+      image: '/assets/OPS Jewels.jpg',
       quote: 'The best investment we made for our business. Their Google Ads management brought us 250% more qualified leads. Highly recommend their services!',
       rating: 5,
+      instagramLink: 'https://www.instagram.com/opsjewels_official/',
     },
     {
       id: 3,
       name: 'Amit Khera',
       position: 'Founder',
       company: 'Amit Khera Photography',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+      image: '/assets/amit khera logo.png',
       quote: 'From building an Instagram strategy to optimizing our Google Business Profile, everything was taken care of professionally. Our local rankings improved, and now our feed reflects the quality of work we do. They are consistent, creative, and results-driven.',
       rating: 5,
     },
@@ -37,30 +38,29 @@ const TestimonialSlider = () => {
       id: 4,
       name: 'Shreyans',
       position: 'Owner, Shreyans Photography',
-      company: 'B2B Solutions',
+      company: 'Shreyans Photography',
       image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      quote: 'They took over our Meta and Google ads, and within weeks, we closed 5 solid leads. What I appreciated most was the transparency, timely reporting, and how they aligned everything with our business goals. It is not just about running ads, it’s about running them smartly—and they did just that.',
+      quote: 'They took over our Meta and Google ads, and within weeks, we closed 5 solid leads. What I appreciated most was the transparency, timely reporting, and how they aligned everything with our business goals. It is not just about running ads, it's about running them smartly—and they did just that.',
       rating: 5,
     },
-    {id: 5,
+    {
+      id: 5,
       name: 'Mr. Navjot',
       position: 'Founder, Nindi Studio',
-      company: 'B2B Solutions',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
+      company: 'Nindi Studio',
+      image: '/assets/nindi studios.png',
       quote: 'We only used Meta ads, and still managed to get over 30 leads in just one month. It was our best-performing campaign yet. The visibility, reach, and quality of leads we got were exactly what we hoped for. These guys really know how to make ads work for small businesses.',
       rating: 5,
-      
     },
-    {id: 6,
+    {
+      id: 6,
       name: 'Team 4 Seasons',
-      position: 'Founder, Nindi Studio',
-      company: 'B2B Solutions',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      quote: 'They crafted a clear, actionable growth strategy for our Instagram and LinkedIn pages. We now have a structured approach to content, better engagement, and an improved brand presence on both platforms. It feels like we finally found a digital partner who gets our industry',
+      position: '4 Seasons Photography',
+      company: '4 Seasons Photography',
+      image: '/assets/4 seasons photography.png',
+      quote: 'They crafted a clear, actionable growth strategy for our Instagram and LinkedIn pages. We now have a structured approach to content, better engagement, and an improved brand presence on both platforms. It feels like we finally found a digital partner who gets our industry.',
       rating: 5,
-      
     },
-    
   ];
 
   const nextSlide = () => {
@@ -110,13 +110,23 @@ const TestimonialSlider = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover mr-4"
+                    className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-custom-red/20"
                   />
-                  <div>
+                  <div className="flex-1">
                     <h4 className="text-lg font-bold text-gray-900">{testimonial.name}</h4>
                     <p className="text-custom-red font-medium">{testimonial.position}</p>
                     <p className="text-gray-500 text-sm">{testimonial.company}</p>
                   </div>
+                  {testimonial.instagramLink && (
+                    <a
+                      href={testimonial.instagramLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-custom-red hover:text-red-700 transition-colors duration-300"
+                    >
+                      <Instagram className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
                 
                 <div className="flex items-center mb-4">
@@ -142,13 +152,23 @@ const TestimonialSlider = () => {
                 <img
                   src={testimonials[currentSlide].image}
                   alt={testimonials[currentSlide].name}
-                  className="w-16 h-16 rounded-full object-cover mr-4"
+                  className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-custom-red/20"
                 />
-                <div>
+                <div className="flex-1">
                   <h4 className="text-lg font-bold text-gray-900">{testimonials[currentSlide].name}</h4>
                   <p className="text-custom-red font-medium">{testimonials[currentSlide].position}</p>
                   <p className="text-gray-500 text-sm">{testimonials[currentSlide].company}</p>
                 </div>
+                {testimonials[currentSlide].instagramLink && (
+                  <a
+                    href={testimonials[currentSlide].instagramLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-custom-red hover:text-red-700 transition-colors duration-300"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
+                )}
               </div>
               
               <div className="flex items-center mb-4">
@@ -198,6 +218,19 @@ const TestimonialSlider = () => {
               <ChevronRight className="w-6 h-6" />
             </button>
           </div>
+        </div>
+
+        {/* Book Now CTA */}
+        <div className="text-center mt-12">
+          <a
+            href="https://calendly.com/contactpriyanegi/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 bg-custom-red text-white font-semibold rounded-full hover:bg-red-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <Calendar className="mr-2 w-5 h-5" />
+            Book Free Consultation
+          </a>
         </div>
       </div>
     </section>
