@@ -40,7 +40,7 @@ const TestimonialSlider = () => {
       position: 'Owner, Shreyans Photography',
       company: 'Shreyans Photography',
       image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop',
-      quote: 'They took over our Meta and Google ads, and within weeks, we closed 5 solid leads. What I appreciated most was the transparency, timely reporting, and how they aligned everything with our business goals. It is not just about running ads, it's about running them smartly—and they did just that.',
+      quote: 'They took over our Meta and Google ads, and within weeks, we closed 5 solid leads. What I appreciated most was the transparency, timely reporting, and how they aligned everything with our business goals. It is not just about running ads, it\'s about running them smartly—and they did just that.',
       rating: 5,
     },
     {
