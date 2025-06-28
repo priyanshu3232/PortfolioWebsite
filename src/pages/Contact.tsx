@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 
 const Contact = () => {
@@ -12,6 +14,7 @@ const Contact = () => {
     message: '',
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -20,11 +23,16 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
     setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 3000);
+    await axios.post(import.meta.env.VITE_SERVER_URL, {formData});
+    setTimeout(() => {
+      setIsSubmitted(false);
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      navigate('/');
+    }, 3000);
   };
 
   const contactInfo = [

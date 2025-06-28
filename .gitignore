@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+server/node_modules
+server/dist
+server/.env
+server/priyanshu-chauhan-portfolio-4019ac552c31.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
