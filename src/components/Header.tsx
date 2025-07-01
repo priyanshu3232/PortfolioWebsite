@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Heart } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,16 +26,6 @@ const Header = () => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-custom-beige/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
-      {/* Brand Logos Banner - Mobile Only */}
-      <div className="lg:hidden bg-stone-600 py-2">
-        <div className="flex justify-center space-x-6 overflow-x-auto px-4">
-          <div className="flex items-center space-x-2 text-stone-100 text-sm font-medium whitespace-nowrap">
-            <Heart className="w-4 h-4" />
-            <span>Trusted Partners</span>
-          </div>
-        </div>
-      </div>
-
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}

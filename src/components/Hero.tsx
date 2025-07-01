@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Play, TrendingUp, Users, Target } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Target } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -22,12 +22,11 @@ const Hero: React.FC = () => {
                 <span>Scale Your Brand Today</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight">
-                Scale your brand with a{' '}
-                <span className="text-custom-red">Farsight Media</span>
+                Scale Smarter, Grow Faster with{' '}
+                <span className="text-custom-red">FarsightMedia</span>
               </h1>
               <p className="text-xl text-stone-600 leading-relaxed max-w-2xl">
-                We blend paid media and micro-influencer marketing to create campaigns you can measure.
-                Drive real results with data-driven strategies that scale.
+                Driving results through targeted ads, strategic SEO, and conversion-focused web design.
               </p>
             </div>
 
@@ -39,24 +38,20 @@ const Hero: React.FC = () => {
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
-              <button className="group inline-flex items-center justify-center px-8 py-4 border-2 border-stone-400 text-stone-700 font-semibold rounded-full hover:border-custom-red hover:text-custom-red transition-all duration-300">
-                <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                Watch Demo
-              </button>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-stone-300">
               <div className="text-center">
-                <div className="text-3xl font-bold text-custom-red">500+</div>
+                <div className="text-3xl font-bold text-custom-red">113+</div>
                 <div className="text-sm text-stone-500 mt-1">Campaigns Launched</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-custom-red">98%</div>
+                <div className="text-3xl font-bold text-custom-red">97%</div>
                 <div className="text-sm text-stone-500 mt-1">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-custom-red">2.5M+</div>
+                <div className="text-3xl font-bold text-custom-red">1.3M+</div>
                 <div className="text-sm text-stone-500 mt-1">Reach Generated</div>
               </div>
             </div>
@@ -70,39 +65,64 @@ const Hero: React.FC = () => {
                 <p className="text-stone-600">Join hundreds of successful companies</p>
               </div>
 
-              {/* Company Logos Grid */}
-              <div className="grid grid-cols-2 gap-6 items-center justify-items-center">
-                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
+              {/* Company Logos Grid - 8 slots in 4x2 layout */}
+              <div className="grid grid-cols-4 gap-4 items-center justify-items-center">
+                <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
                     src="/assets/4 seasons photography.png"
-                    alt="4 Seasons Photography"
-                    className="h-16 w-auto object-contain mb-3"
+                    alt="4Seasons Events"
+                    className="h-10 w-auto object-contain mb-1"
                   />
-                  <span className="text-xs font-medium text-stone-700 text-center">4 Seasons Photography</span>
+                  <span className="text-xs font-medium text-stone-700 text-center">4Seasons Events</span>
                 </div>
-                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
+                <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
                     src="/assets/amit khera logo.png"
                     alt="Amit Khera Photography"
-                    className="h-16 w-auto object-contain mb-3"
+                    className="h-10 w-auto object-contain mb-1"
                   />
                   <span className="text-xs font-medium text-stone-700 text-center">Amit Khera Photography</span>
                 </div>
-                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
+                <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
                     src="/assets/ranjana bhatacharjee photography.png"
                     alt="Ranjana Bhatacharjee Photography"
-                    className="h-16 w-auto object-contain mb-3"
+                    className="h-10 w-auto object-contain mb-1"
                   />
                   <span className="text-xs font-medium text-stone-700 text-center">Ranjana Bhatacharjee Photography</span>
                 </div>
-                <div className="flex flex-col items-center justify-center p-6 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-32">
+                <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
                     src="/assets/wedding saga india.png"
                     alt="Wedding Saga"
-                    className="h-16 w-auto object-contain mb-3"
+                    className="h-10 w-auto object-contain mb-1"
                   />
                   <span className="text-xs font-medium text-stone-700 text-center">Wedding Saga</span>
+                </div>
+                <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
+                  <img
+                    src="/assets/OPS Jewels.jpg"
+                    alt="OPS Jewels"
+                    className="h-10 w-auto object-contain mb-1"
+                  />
+                  <span className="text-xs font-medium text-stone-700 text-center">OPS Jewels</span>
+                </div>
+                <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
+                  <img
+                    src="/assets/nindi studios.png"
+                    alt="Nindi Studio"
+                    className="h-10 w-auto object-contain mb-1"
+                  />
+                  <span className="text-xs font-medium text-stone-700 text-center">Nindi Studio</span>
+                </div>
+                {/* Placeholder slots for future clients */}
+                <div className="flex flex-col items-center justify-center p-3 bg-stone-100 rounded-xl w-full h-20 opacity-50">
+                  <div className="h-10 w-10 bg-stone-200 rounded mb-1"></div>
+                  <span className="text-xs font-medium text-stone-500 text-center">Coming Soon</span>
+                </div>
+                <div className="flex flex-col items-center justify-center p-3 bg-stone-100 rounded-xl w-full h-20 opacity-50">
+                  <div className="h-10 w-10 bg-stone-200 rounded mb-1"></div>
+                  <span className="text-xs font-medium text-stone-500 text-center">Coming Soon</span>
                 </div>
               </div>
 
@@ -114,7 +134,7 @@ const Hero: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-stone-900">ROI Increase</div>
-                    <div className="text-lg font-bold text-custom-red">+245%</div>
+                    <div className="text-lg font-bold text-custom-red">+225%</div>
                   </div>
                 </div>
               </div>
@@ -125,7 +145,7 @@ const Hero: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-sm font-semibold text-stone-900">New Customers</div>
-                    <div className="text-lg font-bold text-stone-600">+1,250</div>
+                    <div className="text-lg font-bold text-stone-600">1157+</div>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,29 +10,23 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2 group">
-              <div className="flex items-center space-x-1">
-                <Heart className="w-6 h-6 text-stone-400 group-hover:text-custom-red transition-colors duration-300" />
-                <Heart className="w-6 h-6 text-custom-red group-hover:text-stone-400 transition-colors duration-300" />
-              </div>
               <span className="text-lg font-bold group-hover:text-stone-400 transition-colors duration-300">
-                Farsight Media
+                <span className="text-white">Farsight</span>
+                <span className="text-custom-red">Media</span>
               </span>
             </Link>
             <p className="text-stone-300 text-sm leading-relaxed">
-              We blend paid media and micro-influencer marketing to create campaigns you can measure.
+              Driving results through targeted ads, strategic SEO, and conversion-focused web design.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
-                <Instagram className="w-5 h-5" />
+              <a href="mailto:hello@farsightmedia.com" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
+                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>

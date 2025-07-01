@@ -55,9 +55,10 @@ const ServicesPreview = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {services.map((service, index) => (
-            <div
+            <Link
               key={service.title}
-              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-100"
+              to="/services"
+              className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-100 cursor-pointer"
             >
               <div className={`w-16 h-16 ${service.color} ${service.hoverColor} rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300`}>
                 <service.icon className="w-8 h-8 text-white" />
@@ -68,7 +69,7 @@ const ServicesPreview = () => {
               <p className="text-stone-600 leading-relaxed">
                 {service.description}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
 
