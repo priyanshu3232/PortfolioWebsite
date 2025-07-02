@@ -8,8 +8,8 @@ const ServicesPreview = () => {
       icon: Search,
       title: 'Google Ads Management',
       description: 'Drive targeted traffic and maximize ROI with expertly managed Google Ads campaigns.',
-      color: 'bg-stone-600',
-      hoverColor: 'group-hover:bg-stone-700',
+      color: 'bg-blue-600',
+      hoverColor: 'group-hover:bg-blue-700',
     },
     {
       icon: () => (
@@ -21,8 +21,8 @@ const ServicesPreview = () => {
       ),
       title: 'Meta Ads Management',
       description: 'Reach your ideal audience on Facebook and Instagram with compelling ad creatives.',
-      color: 'bg-stone-700',
-      hoverColor: 'group-hover:bg-stone-800',
+      color: 'bg-blue-500',
+      hoverColor: 'group-hover:bg-blue-600',
     },
     {
       icon: Building2,
@@ -35,15 +35,15 @@ const ServicesPreview = () => {
       icon: Hash,
       title: 'Social Media Management',
       description: 'Build brand awareness and engage your community across all social platforms.',
-      color: 'bg-stone-500',
-      hoverColor: 'group-hover:bg-stone-600',
+      color: 'bg-purple-600',
+      hoverColor: 'group-hover:bg-purple-700',
     },
     {
       icon: Linkedin,
       title: 'LinkedIn Marketing',
       description: 'Connect with professionals and generate B2B leads through strategic LinkedIn campaigns.',
-      color: 'bg-stone-400',
-      hoverColor: 'group-hover:bg-stone-500',
+      color: 'bg-blue-700',
+      hoverColor: 'group-hover:bg-blue-800',
     },
   ];
 

@@ -6,7 +6,7 @@ import CallToAction from '../components/CallToAction';
 
 const Home = () => {
   return (
-    <div className="pt-16 lg:pt-16 bg-custom-beige">
+    <div className="bg-custom-beige">
       <Hero />
       <ServicesPreview />
       <TestimonialSlider />
