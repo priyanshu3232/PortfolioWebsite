@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowRight, TrendingUp, Users, Target } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -72,10 +71,10 @@ const Hero: React.FC = () => {
                 <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
                     src="/assets/4 seasons photography.png"
-                    alt="4Seasons Events"
+                    alt="4Seasons Event Management"
                     className="h-10 w-auto object-contain mb-1"
                   />
-                  <span className="text-xs font-medium text-stone-700 text-center">4Seasons Events</span>
+                  <span className="text-xs font-medium text-stone-700 text-center">4Seasons Event Management</span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
@@ -88,10 +87,10 @@ const Hero: React.FC = () => {
                 <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
                     src="/assets/ranjana bhatacharjee photography.png"
-                    alt="Ranjana Bhatacharjee Photography"
+                    alt="R Bhatacharjee Photography"
                     className="h-10 w-auto object-contain mb-1"
                   />
-                  <span className="text-xs font-medium text-stone-700 text-center">Ranjana Bhatacharjee Photography</span>
+                  <span className="text-xs font-medium text-stone-700 text-center">R Bhatacharjee Photography</span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
                   <img
