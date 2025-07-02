@@ -78,7 +78,7 @@ const About = () => {
                 At Farsight Media, we believe every business deserves to reach its full potential. Our mission is to democratize access to world-class digital marketing strategies that were once only available to enterprise-level companies.
               </p>
               <p className="text-lg text-stone-600 mb-8 leading-relaxed">
-                We combine cutting-edge technology with human creativity to deliver campaigns that not only drive results but also build lasting relationships between brands and their customers.
+                We don't believe in guesswork or generic campaigns. We craft tailored client acquisition systems that turn cold traffic into qualified leads, booked appointments, and loyal customers.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-custom-beige rounded-xl">

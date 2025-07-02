@@ -55,19 +55,6 @@ const OurWork = () => {
       challenge: 'Poor online visibility and inconsistent brand presence across locations.',
       solution: 'Optimized Google Business Profiles, implemented local SEO strategy, and created engaging social content.',
     },
-    {
-      title: 'Health & Wellness Brand',
-      category: 'Social Media Management',
-      image: 'https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      results: [
-        { metric: 'Followers Growth', value: '+500%', icon: Users },
-        { metric: 'Engagement Rate', value: '12.5%', icon: Award },
-        { metric: 'Brand Awareness', value: '+300%', icon: TrendingUp },
-      ],
-      description: 'Built a thriving online community and increased brand awareness for a health and wellness company.',
-      challenge: 'Limited social media presence and low brand awareness in a saturated market.',
-      solution: 'Created authentic content strategy, partnered with micro-influencers, and built engaged community.',
-    },
   ];
 
   return (

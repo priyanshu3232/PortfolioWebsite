@@ -52,12 +52,14 @@ const Header = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-custom-red transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://calendly.com/contactpriyanegi/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-custom-red text-white px-6 py-2 rounded-full font-medium hover:bg-red-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               Get Started
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -85,13 +87,15 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                to="/contact"
+              <a
+                href="https://calendly.com/contactpriyanegi/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
                 className="block w-full text-center bg-custom-red text-white px-6 py-3 rounded-full font-medium hover:bg-red-700 hover:shadow-lg transition-all duration-300"
               >
                 Get Started
-              </Link>
+              </a>
             </div>
           </div>
         )}
