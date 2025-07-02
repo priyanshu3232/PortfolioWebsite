@@ -13,7 +13,7 @@ const About = () => {
       name: 'Priya Negi',
       position: 'Co-Founder',
       image: '/assets/Priya.png',
-      bio: '',
+      bio: ' She is passionate about creative solutions.',
     },
     {
       name: 'Priyanshu Chauhan',
