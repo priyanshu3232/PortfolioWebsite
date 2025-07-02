@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -7,6 +6,11 @@ import OurWork from './pages/OurWork';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import { createClient } from '@supabase/supabase-js';
+
+const supabase_url = import.meta.env.VITE_SUPABASE_URL;
+const supabase_anon_key = import.meta.env.VITE_SUPABASE_ANON_KEY;
+export const supabase = createClient(supabase_url, supabase_anon_key);
 
 function App() {
   return (

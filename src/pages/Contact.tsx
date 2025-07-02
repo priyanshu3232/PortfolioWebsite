@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { supabase } from '../App';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,8 +27,27 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
+    
+    const { error } = await supabase.from('form_submissions').insert([
+      {
+        full_name: formData.name,
+        email: formData.email,
+        company_name: formData.company,
+        phone_number: formData.phone,
+        service_interest: formData.service,
+        monthly_budget: formData.budget,
+        message: formData.message,
+      },
+    ]);
+
+    if (error) {
+      console.error('Supabase error:', error);
+      alert('There was an error submitting the form. Please try again.');
+      return;
+    }
+
     setIsSubmitted(true);
-    await axios.post(import.meta.env.VITE_SERVER_URL, {formData});
+
     setTimeout(() => {
       setIsSubmitted(false);
       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
