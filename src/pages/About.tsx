@@ -17,7 +17,7 @@ const About = () => {
     },
     {
       name: 'Priyanshu Chauhan',
-      position: 'Web Designer',
+      position: 'Web Developer',
       image: '/assets/Priyanshu.png',
       bio: 'Priyanshu Chauhan is IIT Roorkee Undergraduate, who is passionate about technology and its application in modern problems..',
     },
