@@ -13,13 +13,13 @@ const About = () => {
       name: 'Priya Negi',
       position: 'Co-Founder',
       image: '/assets/Priya.png',
-      bio: 'Strategic marketing expert specializing in campaign optimization and client success.',
+      bio: '',
     },
     {
       name: 'Priyanshu Chauhan',
       position: 'Web Designer',
       image: '/assets/Priyanshu.png',
-      bio: 'Creative professional focused on user experience and conversion-driven design.',
+      bio: 'Priyanshu Chauhan is IIT Roorkee Undergraduate, who is passionate about technology and its application in modern problems..',
     },
   ];
 
