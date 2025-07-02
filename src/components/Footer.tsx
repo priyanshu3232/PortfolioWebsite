@@ -61,12 +61,32 @@ const Footer = () => {
           {/* Services */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Services</h3>
-            <ul className="space-y-2 text-sm text-stone-300">
-              <li>Google Ads Management</li>
-              <li>Meta Ads Management</li>
-              <li>Google Business Profile</li>
-              <li>Social Media Management</li>
-              <li>LinkedIn Marketing</li>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                  Google Ads Management
+                </Link>
+              </li>
+              <li>
+                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                  Meta Ads Management
+                </Link>
+              </li>
+              <li>
+                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                  Google Business Profile
+                </Link>
+              </li>
+              <li>
+                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                  Social Media Management
+                </Link>
+              </li>
+              <li>
+                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                  LinkedIn Marketing
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -94,7 +114,7 @@ const Footer = () => {
           {/* Results Section */}
           <div className="text-center mb-8">
             <h3 className="text-xl font-bold text-white mb-6">Results That Speak for Themselves</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-custom-red">30+</div>
                 <div className="text-stone-400 text-sm">Campaigns Launched</div>
@@ -106,10 +126,6 @@ const Footer = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold text-custom-red">98%</div>
                 <div className="text-stone-400 text-sm">Client Satisfaction</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-custom-red">180%</div>
-                <div className="text-stone-400 text-sm">Average ROI</div>
               </div>
             </div>
           </div>
