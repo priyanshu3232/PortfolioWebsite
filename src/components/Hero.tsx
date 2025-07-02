@@ -31,13 +31,15 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                to="/contact"
+              <a
+                href="https://calendly.com/contactpriyanegi/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center px-8 py-4 bg-custom-red text-white font-semibold rounded-full hover:bg-red-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Link>
+              </a>
             </div>
 
             {/* Stats */}
@@ -115,10 +117,13 @@ const Hero: React.FC = () => {
                   />
                   <span className="text-xs font-medium text-stone-700 text-center">Nindi Studio</span>
                 </div>
-                {/* Placeholder slots for future clients */}
-                <div className="flex flex-col items-center justify-center p-3 bg-stone-100 rounded-xl w-full h-20 opacity-50">
-                  <div className="h-10 w-10 bg-stone-200 rounded mb-1"></div>
-                  <span className="text-xs font-medium text-stone-500 text-center">Coming Soon</span>
+                <div className="flex flex-col items-center justify-center p-3 bg-custom-beige rounded-xl hover:bg-stone-100 transition-colors duration-300 w-full h-20">
+                  <img
+                    src="/assets/ulyar.png"
+                    alt="Ulyar"
+                    className="h-10 w-auto object-contain mb-1"
+                  />
+                  <span className="text-xs font-medium text-stone-700 text-center">Ulyar</span>
                 </div>
                 <div className="flex flex-col items-center justify-center p-3 bg-stone-100 rounded-xl w-full h-20 opacity-50">
                   <div className="h-10 w-10 bg-stone-200 rounded mb-1"></div>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Search, Facebook, Building2, Hash, Linkedin, CheckCircle, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Search, Building2, Hash, Linkedin, CheckCircle, ArrowRight } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -17,10 +16,16 @@ const Services = () => {
         'Conversion tracking setup'
       ],
       color: 'bg-stone-600',
-      price: 'Starting at $1,500/month',
+      price: 'Starting at $500/month',
     },
     {
-      icon: Facebook,
+      icon: () => (
+        <img 
+          src="/assets/meta.png" 
+          alt="Meta" 
+          className="w-8 h-8 object-contain"
+        />
+      ),
       title: 'Meta Ads Management',
       description: 'Reach your ideal audience on Facebook and Instagram with compelling ad creatives.',
       features: [
@@ -32,7 +37,7 @@ const Services = () => {
         'Custom audience creation'
       ],
       color: 'bg-stone-700',
-      price: 'Starting at $1,200/month',
+      price: 'Starting at $700/month',
     },
     {
       icon: Building2,
@@ -47,7 +52,7 @@ const Services = () => {
         'Local citation building'
       ],
       color: 'bg-custom-red',
-      price: 'Starting at $500/month',
+      price: 'Starting at $400/month',
     },
     {
       icon: Hash,
@@ -106,7 +111,11 @@ const Services = () => {
               >
                 <div className="flex-1 space-y-6">
                   <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center`}>
-                    <service.icon className="w-8 h-8 text-white" />
+                    {typeof service.icon === 'function' ? (
+                      <service.icon />
+                    ) : (
+                      <service.icon className="w-8 h-8 text-white" />
+                    )}
                   </div>
                   
                   <div>
@@ -115,13 +124,15 @@ const Services = () => {
                     <div className="text-2xl font-bold text-custom-red mb-6">{service.price}</div>
                   </div>
                   
-                  <Link
-                    to="/contact"
+                  <a
+                    href="https://calendly.com/contactpriyanegi/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center px-6 py-3 bg-custom-red text-white font-semibold rounded-full hover:bg-red-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                   >
                     Get Started
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </Link>
+                  </a>
                 </div>
                 
                 <div className="flex-1">
@@ -152,13 +163,15 @@ const Services = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Let's discuss which services are right for your business and create a custom strategy for your growth.
           </p>
-          <Link
-            to="/contact"
+          <a
+            href="https://calendly.com/contactpriyanegi/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-white text-custom-red font-semibold rounded-full hover:bg-stone-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
           >
             Schedule Free Consultation
             <ArrowRight className="ml-2 w-5 h-5" />
-          </Link>
+          </a>
         </div>
       </section>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, Facebook, Building2, Hash, Linkedin, ArrowRight } from 'lucide-react';
+import { Search, Building2, Hash, Linkedin, ArrowRight } from 'lucide-react';
 
 const ServicesPreview = () => {
   const services = [
@@ -12,7 +12,13 @@ const ServicesPreview = () => {
       hoverColor: 'group-hover:bg-stone-700',
     },
     {
-      icon: Facebook,
+      icon: () => (
+        <img 
+          src="/assets/meta.png" 
+          alt="Meta" 
+          className="w-8 h-8 object-contain"
+        />
+      ),
       title: 'Meta Ads Management',
       description: 'Reach your ideal audience on Facebook and Instagram with compelling ad creatives.',
       color: 'bg-stone-700',
@@ -61,7 +67,11 @@ const ServicesPreview = () => {
               className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-stone-100 cursor-pointer"
             >
               <div className={`w-16 h-16 ${service.color} ${service.hoverColor} rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300`}>
-                <service.icon className="w-8 h-8 text-white" />
+                {typeof service.icon === 'function' ? (
+                  <service.icon />
+                ) : (
+                  <service.icon className="w-8 h-8 text-white" />
+                )}
               </div>
               <h3 className="text-xl font-bold text-stone-900 mb-4 group-hover:text-custom-red transition-colors duration-300">
                 {service.title}

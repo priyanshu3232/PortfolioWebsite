@@ -84,23 +84,48 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-stone-400" />
-                <span className="text-sm text-stone-300">Dehradun, Uttarakhand</span>
+                <span className="text-sm text-stone-300">McDonough, Georgia, United States</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-stone-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-stone-400">
-            © 2025 Farsight Media. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-sm text-stone-400 hover:text-custom-red transition-colors duration-300">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-sm text-stone-400 hover:text-custom-red transition-colors duration-300">
-              Terms of Service
-            </a>
+        <div className="border-t border-stone-800 mt-12 pt-8">
+          {/* Results Section */}
+          <div className="text-center mb-8">
+            <h3 className="text-xl font-bold text-white mb-6">Results That Speak for Themselves</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-custom-red">30+</div>
+                <div className="text-stone-400 text-sm">Campaigns Launched</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-custom-red">$60K</div>
+                <div className="text-stone-400 text-sm">Revenue Generated</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-custom-red">98%</div>
+                <div className="text-stone-400 text-sm">Client Satisfaction</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-custom-red">180%</div>
+                <div className="text-stone-400 text-sm">Average ROI</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-stone-400">
+              © 2025 Farsight Media. All rights reserved.
+            </p>
+            <div className="flex space-x-6 mt-4 md:mt-0">
+              <a href="#" className="text-sm text-stone-400 hover:text-custom-red transition-colors duration-300">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-sm text-stone-400 hover:text-custom-red transition-colors duration-300">
+                Terms of Service
+              </a>
+            </div>
           </div>
         </div>
       </div>

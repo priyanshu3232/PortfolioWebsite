@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 
 const CallToAction = () => {
@@ -29,20 +28,22 @@ const CallToAction = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link
-              to="/contact"
+            <a
+              href="https://calendly.com/contactpriyanegi/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center px-8 py-4 bg-white text-custom-red font-semibold rounded-full hover:bg-stone-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Start Your Growth Journey
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-            </Link>
+            </a>
             
-            <Link
-              to="/our-work"
+            <a
+              href="/our-work"
               className="group inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-custom-red transition-all duration-300"
             >
               View Our Work
-            </Link>
+            </a>
           </div>
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-white">

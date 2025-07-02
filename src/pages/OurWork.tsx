@@ -4,16 +4,29 @@ import { ExternalLink, TrendingUp, Users, Target, Award } from 'lucide-react';
 const OurWork = () => {
   const caseStudies = [
     {
-      title: 'E-commerce Fashion Brand',
-      category: 'Google Ads & Meta Ads',
-      image: 'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      title: 'Wedding Photography',
+      category: 'Meta Ads & Google Ads',
+      image: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       results: [
-        { metric: 'ROI Increase', value: '+245%', icon: TrendingUp },
-        { metric: 'New Customers', value: '1,250', icon: Users },
-        { metric: 'Conversion Rate', value: '+180%', icon: Target },
+        { metric: 'ROI Increase', value: '+113%', icon: TrendingUp },
+        { metric: 'New Leads', value: '15+', icon: Users },
+        { metric: 'Conversion Rate', value: '10%', icon: Target },
       ],
-      description: 'Transformed a struggling fashion e-commerce store into a profitable business through strategic Google and Meta advertising campaigns.',
-      challenge: 'Low conversion rates and high customer acquisition costs were limiting growth potential.',
+      description: 'Generate high-quality leads for a wedding photographer aiming to expand bookings in targeted cities.',
+      challenge: 'The client struggled with inconsistent lead flow and low engagement from their online ad efforts, despite offering competitive packages and strong portfolio work.',
+      solution: 'Ran Geo-targeted Meta and Google ad with scroll-stopping creatives.',
+    },
+    {
+      title: 'Used Car Dealership',
+      category: 'Google Ads & Meta Ads',
+      image: 'https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      results: [
+        { metric: 'ROI Increase', value: '+215%', icon: TrendingUp },
+        { metric: 'New Customers', value: '35+', icon: Users },
+        { metric: 'Conversion Rate', value: '20%', icon: Target },
+      ],
+      description: 'Boost footfall and generate quality leads for a used car dealership struggling with low in-store visits.',
+      challenge: 'The dealership faced a consistent drop in customer visits, resulting in slow inventory movement and declining ROI on previous ad campaigns.',
       solution: 'Implemented targeted audience segmentation, optimized ad creatives, and improved landing page experience.',
     },
     {
@@ -34,9 +47,9 @@ const OurWork = () => {
       category: 'Google Business Profile & Social Media',
       image: 'https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
       results: [
-        { metric: 'Local Visibility', value: '+400%', icon: Target },
-        { metric: 'Foot Traffic', value: '+85%', icon: Users },
-        { metric: 'Online Orders', value: '+200%', icon: TrendingUp },
+        { metric: 'Local Visibility', value: '+60%', icon: Target },
+        { metric: 'Foot Traffic', value: '+50%', icon: Users },
+        { metric: 'Online Orders', value: '+60%', icon: TrendingUp },
       ],
       description: 'Boosted local presence and customer engagement for a restaurant chain across multiple locations.',
       challenge: 'Poor online visibility and inconsistent brand presence across locations.',
@@ -138,11 +151,11 @@ const OurWork = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">500+</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">30+</div>
               <div className="text-white/80">Campaigns Launched</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">$50M+</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">$60K</div>
               <div className="text-white/80">Revenue Generated</div>
             </div>
             <div className="text-center">
@@ -150,7 +163,7 @@ const OurWork = () => {
               <div className="text-white/80">Client Satisfaction</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">250%</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">180%</div>
               <div className="text-white/80">Average ROI</div>
             </div>
           </div>
