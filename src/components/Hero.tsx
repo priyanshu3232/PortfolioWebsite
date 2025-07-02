@@ -44,16 +44,16 @@ const Hero: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-stone-300">
               <div className="text-center">
-                <div className="text-3xl font-bold text-custom-red">113+</div>
+                <div className="text-3xl font-bold text-custom-red">30+</div>
                 <div className="text-sm text-stone-500 mt-1">Campaigns Launched</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-custom-red">97%</div>
+                <div className="text-3xl font-bold text-custom-red">98%</div>
                 <div className="text-sm text-stone-500 mt-1">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-custom-red">1.3M+</div>
-                <div className="text-sm text-stone-500 mt-1">Reach Generated</div>
+                <div className="text-3xl font-bold text-custom-red">$60k+</div>
+                <div className="text-sm text-stone-500 mt-1">Revenue Generated</div>
               </div>
             </div>
           </div>
