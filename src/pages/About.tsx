@@ -4,28 +4,22 @@ import { Users, Target, Award, Heart, Zap, Shield } from 'lucide-react';
 const About = () => {
   const team = [
     {
-      name: 'Sarah Johnson',
-      position: 'CEO & Founder',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      bio: '10+ years in digital marketing with expertise in scaling businesses from startup to enterprise level.',
+      name: 'Rohan Rana',
+      position: 'Founder',
+      image: '/assets/Rohan.png',
+      bio: 'Visionary leader with expertise in digital marketing strategy and business growth.',
     },
     {
-      name: 'Michael Chen',
-      position: 'Head of Paid Media',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      bio: 'Google Ads certified expert with $10M+ in managed ad spend and proven track record of ROI optimization.',
+      name: 'Priya Negi',
+      position: 'Co-Founder',
+      image: '/assets/Priya.png',
+      bio: 'Strategic marketing expert specializing in campaign optimization and client success.',
     },
     {
-      name: 'Emily Rodriguez',
-      position: 'Creative Director',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      bio: 'Award-winning creative professional specializing in brand storytelling and conversion-focused design.',
-    },
-    {
-      name: 'David Thompson',
-      position: 'Analytics Manager',
-      image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop',
-      bio: 'Data scientist turned marketer with expertise in attribution modeling and performance optimization.',
+      name: 'Priyanshu Chauhan',
+      position: 'Web Designer',
+      image: '/assets/Priyanshu.png',
+      bio: 'Creative professional focused on user experience and conversion-driven design.',
     },
   ];
 
@@ -53,7 +47,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-20 bg-custom-beige">
+    <div className="pt-16 bg-custom-beige">
       {/* Hero Section */}
       <section className="bg-custom-beige py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -143,7 +137,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {team.map((member, index) => (
               <div
                 key={member.name}
