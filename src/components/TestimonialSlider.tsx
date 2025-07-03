@@ -54,9 +54,9 @@ const TestimonialSlider = () => {
     },
     {
       id: 6,
-      name: 'Team 4 Seasons',
-      position: '4 Seasons Photography',
-      company: '4 Seasons Photography',
+      name: 'Team 4 Seasons Events',
+      position: '4 Seasons Events',
+      company: '4 Seasons Events',
       image: '/assets/4 seasons photography.png',
       quote: 'They crafted a clear, actionable growth strategy for our Instagram and LinkedIn pages. We now have a structured approach to content, better engagement, and an improved brand presence on both platforms. It feels like we finally found a digital partner who gets our industry.',
       rating: 5,
