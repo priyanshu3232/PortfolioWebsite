@@ -22,7 +22,12 @@ const Footer = () => {
               <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
+              <a 
+                href="https://www.linkedin.com/company/far-sight-media/posts/?feedView=all" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-stone-400 hover:text-custom-red transition-colors duration-300"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="mailto:hello@farsightmedia.com" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
