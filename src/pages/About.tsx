@@ -21,6 +21,12 @@ const About = () => {
       image: '/assets/Priyanshu.png',
       bio: 'Priyanshu Chauhan is IIT Roorkee Undergraduate, who is passionate about technology and its application in modern problems..',
     },
+    {
+      name: 'Siddhartha',
+      position: 'SEO Expert',
+      image: '/assets/sidarth.png',
+      bio: 'Passionate for turning search engines into growth engines. Always testing and optimizing.',
+    },
   ];
 
   const values = [
@@ -137,7 +143,7 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {team.map((member, index) => (
               <div
                 key={member.name}
