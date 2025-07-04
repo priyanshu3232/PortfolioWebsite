@@ -7,26 +7,21 @@ const About = () => {
       name: 'Rohan Rana',
       position: 'Founder',
       image: '/assets/Rohan.png',
-      bio: 'Visionary leader with expertise in digital marketing strategy and business growth.',
+      bio: 'I believe in building systems that scale, strategies that convert and teams that move fast. ',
     },
     {
       name: 'Priya Negi',
       position: 'Co-Founder',
       image: '/assets/Priya.png',
-      bio: ' She is passionate about creative solutions.',
+      bio: 'I thrive on solving real business challenges with smart, performance-focused marketing.',
     },
     {
       name: 'Priyanshu Chauhan',
       position: 'Web Developer',
       image: '/assets/Priyanshu.png',
-      bio: 'Priyanshu Chauhan is IIT Roorkee Undergraduate, who is passionate about technology and its application in modern problems..',
+      bio: 'IIT Roorkee Graduate. Passionate about technology and its application in modern problems.',
     },
-    {
-      name: 'Siddhartha',
-      position: 'SEO Expert',
-      image: '/assets/sidarth.png',
-      bio: 'Passionate for turning search engines into growth engines. Always testing and optimizing.',
-    },
+   
   ];
 
   const values = [
