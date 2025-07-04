@@ -21,7 +21,12 @@ const About = () => {
       image: '/assets/Priyanshu.png',
       bio: 'IIT Roorkee Graduate. Passionate about technology and its application in modern problems.',
     },
-   
+    {
+      name: 'Siddhartha',
+      position: 'SEO Expert',
+      image: '/assets/sidarth.png',
+      bio: 'Passionate for turning search engines into growth engines. Always testing and optimizing.',
+    },
   ];
 
   const values = [
@@ -138,24 +143,28 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {team.map((member, index) => (
-              <div
-                key={member.name}
-                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
-              >
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-stone-900 mb-2">{member.name}</h3>
-                  <p className="text-custom-red font-medium mb-4">{member.position}</p>
-                  <p className="text-stone-600 text-sm leading-relaxed">{member.bio}</p>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl">
+              {team.map((member, index) => (
+                <div
+                  key={member.name}
+                  className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+                >
+                  <div className="w-full h-64 overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-center"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-stone-900 mb-2">{member.name}</h3>
+                    <p className="text-custom-red font-medium mb-4">{member.position}</p>
+                    <p className="text-stone-600 text-sm leading-relaxed">{member.bio}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
