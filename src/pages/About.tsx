@@ -144,7 +144,7 @@ const About = () => {
                   key={member.name}
                   className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
                 >
-                  <div className="w-full h-64 overflow-hidden">
+                  <div className="w-full h-80 sm:h-64 overflow-hidden">
                     <img
                       src={member.image}
                       alt={member.name}
