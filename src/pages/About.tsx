@@ -21,12 +21,6 @@ const About = () => {
       image: '/assets/Priyanshu.png',
       bio: 'IIT Roorkee Graduate. Passionate about technology and its application in modern problems.',
     },
-    {
-      name: 'Siddhartha',
-      position: 'SEO Expert',
-      image: '/assets/sidarth.png',
-      bio: 'Passionate for turning search engines into growth engines. Always testing and optimizing.',
-    },
   ];
 
   const values = [
@@ -144,7 +138,7 @@ const About = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl">
               {team.map((member, index) => (
                 <div
                   key={member.name}
@@ -154,7 +148,7 @@ const About = () => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover object-center"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <div className="p-6">
