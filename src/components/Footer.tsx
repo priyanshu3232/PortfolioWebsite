@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -19,9 +19,6 @@ const Footer = () => {
               Driving results through targeted ads, strategic SEO, and conversion-focused web design.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
-                <Facebook className="w-5 h-5" />
-              </a>
               <a 
                 href="https://www.linkedin.com/company/far-sight-media/posts/?feedView=all" 
                 target="_blank"
@@ -29,9 +26,6 @@ const Footer = () => {
                 className="text-stone-400 hover:text-custom-red transition-colors duration-300"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="mailto:hello@farsightmedia.com" className="text-stone-400 hover:text-custom-red transition-colors duration-300">
-                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
