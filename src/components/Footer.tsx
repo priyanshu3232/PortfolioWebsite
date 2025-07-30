@@ -35,22 +35,47 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
+                <Link 
+                  to="/services" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
+                <Link 
+                  to="/our-work" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Our Work
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
+                <Link 
+                  to="/ugc" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
+                  UGC
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/about" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm">
+                <Link 
+                  to="/contact" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300 text-sm"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Contact Us
                 </Link>
               </li>
@@ -62,27 +87,47 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                <Link 
+                  to="/services" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Google Ads Management
                 </Link>
               </li>
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                <Link 
+                  to="/services" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Meta Ads Management
                 </Link>
               </li>
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                <Link 
+                  to="/services" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Google Business Profile
                 </Link>
               </li>
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                <Link 
+                  to="/services" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   Social Media Management
                 </Link>
               </li>
               <li>
-                <Link to="/our-work" className="text-stone-300 hover:text-custom-red transition-colors duration-300">
+                <Link 
+                  to="/services" 
+                  className="text-stone-300 hover:text-custom-red transition-colors duration-300"
+                  onClick={() => window.scrollTo(0, 0)}
+                >
                   LinkedIn Marketing
                 </Link>
               </li>
@@ -95,7 +140,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-stone-400" />
-                <span className="text-sm text-stone-300">hello@farsightmedia.com</span>
+                <span className="text-sm text-stone-300">support@itsfarsightmedia.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-stone-400" />
