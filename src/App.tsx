@@ -5,6 +5,7 @@ import Services from './pages/Services';
 import OurWork from './pages/OurWork';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import UGC from './pages/UGC';
 import Footer from './components/Footer';
 import { createClient } from '@supabase/supabase-js';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/our-work" element={<OurWork />} />
+          <Route path="/ugc" element={<UGC />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
