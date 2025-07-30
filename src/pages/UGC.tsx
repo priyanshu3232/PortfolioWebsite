@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, ArrowRight, Users, Camera, Heart, TrendingUp } from 'lucide-react';
+import { CheckCircle, ArrowRight, Users, Camera, Heart, TrendingUp, Sparkles, Star, Award } from 'lucide-react';
 
 const UGC = () => {
   const benefits = [
@@ -49,84 +49,128 @@ const UGC = () => {
   ];
 
   return (
-    <div className="pt-20 bg-custom-beige">
+    <div className="pt-20 bg-gradient-to-br from-custom-beige via-stone-50 to-custom-beige">
       {/* Hero Section */}
-      <section className="bg-custom-beige py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center space-x-2 bg-white/80 text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Camera className="w-4 h-4" />
-              <span>WE DESIGN EXPERIENCES, NOT ADS</span>
+      <section className="relative py-24 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-custom-red/5 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-stone-200/30 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-pulse delay-1000"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center space-x-2 bg-white/90 backdrop-blur-sm text-stone-700 px-6 py-3 rounded-full text-sm font-medium mb-8 border border-stone-200 shadow-lg">
+              <Camera className="w-4 h-4 text-custom-red" />
+              <span className="font-semibold">WE DESIGN EXPERIENCES, NOT ADS</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">
-              Storytelling, built for <span className="text-custom-red">conversion</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-stone-900 mb-8 leading-tight">
+              Storytelling, built for{' '}
+              <span className="bg-gradient-to-r from-custom-red to-red-600 bg-clip-text text-transparent">
+                conversion
+              </span>
             </h1>
-            <p className="text-xl text-stone-600 max-w-3xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl text-stone-600 max-w-4xl mx-auto mb-12 leading-relaxed">
               We partner with our clients to deliver fully-managed, innovative, human-to-human UGC marketing campaigns.
             </p>
           </div>
 
           {/* Hero Image */}
-          <div className="flex justify-center mb-12">
-            <img
-              src="/assets/man with show.png"
-              alt="UGC Content Creation"
-              className="w-full max-w-4xl h-80 md:h-96 object-cover rounded-2xl shadow-xl"
-            />
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+            <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
+              <img
+                src="/assets/man with show.png"
+                alt="UGC Content Creation"
+                className="w-full max-w-5xl mx-auto h-[32rem] object-cover object-center rounded-2xl"
+                style={{ objectFit: 'cover', objectPosition: 'center' }}
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-4">
-              Benefits of <span className="text-custom-red">Influencer Marketing</span>
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center space-x-2 bg-custom-beige text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <Sparkles className="w-4 h-4 text-custom-red" />
+              <span>PROVEN RESULTS</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-stone-900 mb-6">
+              Benefits of{' '}
+              <span className="bg-gradient-to-r from-custom-red to-red-600 bg-clip-text text-transparent">
+                Influencer Marketing
+              </span>
             </h2>
           </div>
 
           {/* Two column layout with images */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20 items-center">
             {/* Left Column - Content */}
             <div className="space-y-8">
-              <div className="bg-custom-beige p-8 rounded-2xl">
-                <h3 className="text-xl font-bold text-stone-900 mb-4">Evergreen, FTC-compliant content, without wasting products</h3>
-                <p className="text-stone-600 mb-6">
-                  With our +35% ship-to-post rate, brands are confident their campaigns will result high-quality reusable content.
-                </p>
+              <div className="group bg-gradient-to-br from-custom-beige to-stone-100 p-8 rounded-3xl hover:shadow-xl transition-all duration-300 border border-stone-200">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-custom-red rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Star className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3 group-hover:text-custom-red transition-colors">
+                      Evergreen, FTC-compliant content, without wasting products
+                    </h3>
+                    <p className="text-stone-600 leading-relaxed">
+                      With our +35% ship-to-post rate, brands are confident their campaigns will result in high-quality reusable content.
+                    </p>
+                  </div>
+                </div>
               </div>
               
-              <div className="bg-custom-beige p-8 rounded-2xl">
-                <h3 className="text-xl font-bold text-stone-900 mb-4">Transform content to ecommerce with Shoppable Content</h3>
-                <p className="text-stone-600 mb-6">
-                  Our Shoppable Content widget integrates with product pages to turn content into conversion by doubling your Add-To-Cart rates.
-                </p>
+              <div className="group bg-gradient-to-br from-custom-beige to-stone-100 p-8 rounded-3xl hover:shadow-xl transition-all duration-300 border border-stone-200">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-custom-red rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <Award className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-stone-900 mb-3 group-hover:text-custom-red transition-colors">
+                      Transform content to ecommerce with Shoppable Content
+                    </h3>
+                    <p className="text-stone-600 leading-relaxed">
+                      Our Shoppable Content widget integrates with product pages to turn content into conversion by doubling your Add-To-Cart rates.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Right Column - Image */}
-            <div className="flex justify-center">
-              <img
-                src="/assets/running athelete.png"
-                alt="Influencer Marketing Benefits"
-                className="w-full max-w-md h-80 object-cover rounded-2xl shadow-xl"
-              />
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+              <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
+                <img
+                  src="/assets/running athelete.png"
+                  alt="Influencer Marketing Benefits"
+                  className="w-full h-96 object-cover object-center rounded-2xl"
+                  style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                />
+              </div>
             </div>
           </div>
 
-          {/* Benefits List */}
+          {/* Benefits Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {benefits.map((benefit, index) => (
               <div
                 key={benefit.title}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-stone-100"
+                className="group bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-stone-100 hover:border-custom-red/20 transform hover:-translate-y-2"
               >
-                <div className="w-12 h-12 bg-custom-red rounded-xl flex items-center justify-center mb-6">
-                  <benefit.icon className="w-6 h-6 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-custom-red to-red-600 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300">
+                  <benefit.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-stone-900 mb-4">{benefit.title}</h3>
-                <p className="text-stone-600 leading-relaxed">{benefit.description}</p>
+                <h3 className="text-2xl font-bold text-stone-900 mb-4 group-hover:text-custom-red transition-colors">
+                  {benefit.title}
+                </h3>
+                <p className="text-stone-600 leading-relaxed text-lg">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -134,20 +178,36 @@ const UGC = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-stone-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">How it works</h2>
+      <section className="py-24 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 text-white relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-72 h-72 bg-custom-red/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-72 h-72 bg-white/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">How it works</h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              Our streamlined process ensures maximum impact and efficiency
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
-              <div key={step.title} className="text-center">
-                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+              <div key={step.title} className="group text-center relative">
+                <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-3xl flex items-center justify-center mx-auto mb-6 text-3xl group-hover:bg-custom-red/20 transition-all duration-300 group-hover:scale-110">
                   {step.icon}
                 </div>
-                <h3 className="text-lg font-bold mb-3">{step.title}</h3>
-                <p className="text-white/80 text-sm leading-relaxed">{step.description}</p>
+                <h3 className="text-xl font-bold mb-4 group-hover:text-custom-red transition-colors">
+                  {step.title}
+                </h3>
+                <p className="text-white/80 leading-relaxed">{step.description}</p>
+                
+                {/* Connector Line */}
+                {index < processSteps.length - 1 && (
+                  <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-to-r from-white/20 to-transparent transform translate-x-4"></div>
+                )}
               </div>
             ))}
           </div>
@@ -155,71 +215,87 @@ const UGC = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-custom-beige">
+      <section className="py-24 bg-gradient-to-br from-custom-beige via-stone-50 to-custom-beige relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center space-x-2 bg-white/80 text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <span>Work with the 5% of Creators</span>
+              <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-stone-200">
+                <Users className="w-4 h-4 text-custom-red" />
+                <span className="font-semibold">Work with the 5% of Creators</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-                Your own team of world-class social media creators
+              <h2 className="text-4xl md:text-5xl font-bold text-stone-900 mb-8 leading-tight">
+                Your own team of world-class{' '}
+                <span className="bg-gradient-to-r from-custom-red to-red-600 bg-clip-text text-transparent">
+                  social media creators
+                </span>
               </h2>
-              <p className="text-lg text-stone-600 mb-8 leading-relaxed">
+              <p className="text-xl text-stone-600 mb-10 leading-relaxed">
                 We help you decentralize your creation efforts without having to discover, recruit, and onboard the right creators. Our creators have a pulse on social media and understand engagement. Leverage the best user-generated content creators.
               </p>
               <a
                 href="https://calendly.com/contactpriyanegi/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-custom-red text-white font-semibold rounded-full hover:bg-red-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-custom-red to-red-600 text-white font-semibold rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 Book a call
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
             </div>
             
-            <div className="flex justify-center">
-              <img
-                src="/assets/running girl.png"
-                alt="Social Media Creators"
-                className="w-full max-w-md h-80 object-cover rounded-2xl shadow-xl"
-              />
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+              <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
+                <img
+                  src="/assets/running girl.png"
+                  alt="Social Media Creators"
+                  className="w-full h-96 object-cover object-center rounded-2xl"
+                  style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Native UGC Section */}
-      <section className="py-20 bg-white">
+      <section className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <img
-                src="/assets/girlwithflower.png"
-                alt="Native User-Generated Content"
-                className="w-full max-w-md h-80 object-cover rounded-2xl shadow-xl"
-              />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative group lg:order-1">
+              <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
+              <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
+                <img
+                  src="/assets/girlwithflower.png"
+                  alt="Native User-Generated Content"
+                  className="w-full h-96 object-cover object-center rounded-2xl"
+                  style={{ objectFit: 'cover', objectPosition: 'center top' }}
+                />
+              </div>
             </div>
             
-            <div>
-              <div className="inline-flex items-center space-x-2 bg-custom-beige text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <span>Create on-brand content that converts</span>
+            <div className="lg:order-2">
+              <div className="inline-flex items-center space-x-2 bg-custom-beige text-stone-700 px-4 py-2 rounded-full text-sm font-medium mb-8 border border-stone-200">
+                <Camera className="w-4 h-4 text-custom-red" />
+                <span className="font-semibold">Create on-brand content that converts</span>
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-                Native User-Generated Content
+              <h2 className="text-4xl md:text-5xl font-bold text-stone-900 mb-8 leading-tight">
+                Native{' '}
+                <span className="bg-gradient-to-r from-custom-red to-red-600 bg-clip-text text-transparent">
+                  User-Generated Content
+                </span>
               </h2>
-              <p className="text-lg text-stone-600 mb-8 leading-relaxed">
+              <p className="text-xl text-stone-600 mb-10 leading-relaxed">
                 Create content that is native to each social media platform and representative of your social media strategy.
               </p>
               <a
                 href="https://calendly.com/contactpriyanegi/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-custom-red text-white font-semibold rounded-full hover:bg-red-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-custom-red to-red-600 text-white font-semibold rounded-full hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 Book a call
-                <ArrowRight className="ml-2 w-4 h-4" />
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
             </div>
           </div>
@@ -227,55 +303,96 @@ const UGC = () => {
       </section>
 
       {/* Content Types Section */}
-      <section className="py-20 bg-stone-900 text-white">
+      <section className="py-24 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Camera className="w-6 h-6" />
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Content Types We Create</h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              Diverse content formats to engage your audience across all platforms
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="group text-center p-8 rounded-3xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10">
+              <div className="w-16 h-16 bg-custom-red/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-custom-red/30 transition-colors">
+                <Camera className="w-8 h-8 text-custom-red" />
               </div>
-              <h3 className="text-lg font-bold mb-2">Unboxing Videos</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-custom-red transition-colors">Unboxing Videos</h3>
+              <p className="text-white/70">Authentic product reveals</p>
             </div>
-            <div>
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Users className="w-6 h-6" />
+            <div className="group text-center p-8 rounded-3xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10">
+              <div className="w-16 h-16 bg-custom-red/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-custom-red/30 transition-colors">
+                <Users className="w-8 h-8 text-custom-red" />
               </div>
-              <h3 className="text-lg font-bold mb-2">Testimonials</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-custom-red transition-colors">Testimonials</h3>
+              <p className="text-white/70">Real customer experiences</p>
             </div>
-            <div>
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-6 h-6" />
+            <div className="group text-center p-8 rounded-3xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10">
+              <div className="w-16 h-16 bg-custom-red/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-custom-red/30 transition-colors">
+                <TrendingUp className="w-8 h-8 text-custom-red" />
               </div>
-              <h3 className="text-lg font-bold mb-2">Product Demos</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-custom-red transition-colors">Product Demos</h3>
+              <p className="text-white/70">Feature showcases</p>
             </div>
-            <div>
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-6 h-6" />
+            <div className="group text-center p-8 rounded-3xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10">
+              <div className="w-16 h-16 bg-custom-red/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-custom-red/30 transition-colors">
+                <Heart className="w-8 h-8 text-custom-red" />
               </div>
-              <h3 className="text-lg font-bold mb-2">Lifestyle Shots</h3>
+              <h3 className="text-xl font-bold mb-2 group-hover:text-custom-red transition-colors">Lifestyle Shots</h3>
+              <p className="text-white/70">Brand integration in daily life</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-custom-red">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Transform Your Content Strategy?
-          </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Let's create authentic, engaging user-generated content that converts your audience into customers.
-          </p>
-          <a
-            href="https://calendly.com/contactpriyanegi/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-4 bg-white text-custom-red font-semibold rounded-full hover:bg-stone-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-          >
-            Start Your UGC Campaign
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </a>
+      <section className="py-24 bg-gradient-to-br from-custom-red via-red-600 to-custom-red relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-4xl mx-auto">
+            <div className="inline-flex items-center space-x-2 bg-white/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-8">
+              <Sparkles className="w-4 h-4" />
+              <span>Ready to Transform Your Content Strategy?</span>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+              Let's Create Something Amazing Together
+            </h2>
+            
+            <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed max-w-3xl mx-auto">
+              Let's create authentic, engaging user-generated content that converts your audience into customers.
+            </p>
+            
+            <a
+              href="https://calendly.com/contactpriyanegi/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center px-10 py-5 bg-white text-custom-red font-bold rounded-full hover:bg-stone-50 hover:shadow-2xl transform hover:scale-105 transition-all duration-300 text-lg"
+            >
+              Start Your UGC Campaign
+              <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
+            </a>
+            
+            <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">24/7</div>
+                <div className="text-white/80">Support Available</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">30 Days</div>
+                <div className="text-white/80">Money Back Guarantee</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold mb-2">Free</div>
+                <div className="text-white/80">Strategy Consultation</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
