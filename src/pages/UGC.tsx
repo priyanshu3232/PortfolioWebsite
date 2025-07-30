@@ -78,12 +78,47 @@ const UGC = () => {
           {/* Hero Image */}
           <div className="relative group">
             <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
-            <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
-              <img
-                src="/assets/man with show.png"
-                alt="UGC Content Creation"
-                className="w-full max-w-4xl mx-auto h-80 object-contain rounded-2xl"
-              />
+            <div className="relative bg-white p-4 rounded-3xl shadow-2xl overflow-hidden">
+              <div className="relative">
+                <img
+                  src="/assets/man with show.png"
+                  alt="UGC Content Creation"
+                  className="w-full max-w-4xl mx-auto h-80 object-contain rounded-2xl"
+                />
+                
+                {/* Premium Floating Elements */}
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg border">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm font-semibold text-stone-700">Live Content</span>
+                  </div>
+                </div>
+                
+                <div className="absolute top-4 right-4 bg-custom-red/10 backdrop-blur-sm px-3 py-1 rounded-full border border-custom-red/20">
+                  <span className="text-sm font-bold text-custom-red">Premium UGC</span>
+                </div>
+                
+                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg border">
+                  <div className="flex items-center space-x-2">
+                    <Camera className="w-4 h-4 text-custom-red" />
+                    <span className="text-xs font-semibold text-stone-700">Professional Creator</span>
+                  </div>
+                </div>
+                
+                <div className="absolute bottom-4 right-4 bg-stone-900/80 backdrop-blur-sm px-3 py-2 rounded-lg">
+                  <div className="flex items-center space-x-1">
+                    <Star className="w-3 h-3 text-yellow-400 fill-current" />
+                    <Star className="w-3 h-3 text-yellow-400 fill-current" />
+                    <Star className="w-3 h-3 text-yellow-400 fill-current" />
+                    <Star className="w-3 h-3 text-yellow-400 fill-current" />
+                    <Star className="w-3 h-3 text-yellow-400 fill-current" />
+                    <span className="text-xs font-bold text-white ml-1">5.0</span>
+                  </div>
+                </div>
+                
+                {/* Gradient Overlay for Premium Look */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -145,12 +180,42 @@ const UGC = () => {
             {/* Right Column - Image */}
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
-              <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
-                <img
-                  src="/assets/running athelete.png"
-                  alt="Influencer Marketing Benefits"
-                  className="w-full h-80 object-contain rounded-2xl"
-                />
+              <div className="relative bg-white p-4 rounded-3xl shadow-2xl overflow-hidden">
+                <div className="relative">
+                  <img
+                    src="/assets/running athelete.png"
+                    alt="Influencer Marketing Benefits"
+                    className="w-full h-80 object-contain rounded-2xl"
+                  />
+                  
+                  {/* Performance Metrics Overlay */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm p-3 rounded-xl shadow-lg border">
+                    <div className="text-xs text-stone-500 mb-1">Engagement Rate</div>
+                    <div className="text-2xl font-bold text-custom-red">+225%</div>
+                  </div>
+                  
+                  <div className="absolute top-4 right-4 bg-custom-red text-white px-3 py-2 rounded-full text-xs font-bold">
+                    TRENDING
+                  </div>
+                  
+                  <div className="absolute bottom-4 left-4 bg-stone-900/90 backdrop-blur-sm p-3 rounded-xl">
+                    <div className="flex items-center space-x-2">
+                      <div className="flex -space-x-1">
+                        <div className="w-6 h-6 bg-blue-500 rounded-full border-2 border-white"></div>
+                        <div className="w-6 h-6 bg-green-500 rounded-full border-2 border-white"></div>
+                        <div className="w-6 h-6 bg-purple-500 rounded-full border-2 border-white"></div>
+                      </div>
+                      <span className="text-xs font-semibold text-white">1.2M+ Views</span>
+                    </div>
+                  </div>
+                  
+                  <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-3 py-2 rounded-lg border">
+                    <div className="flex items-center space-x-1">
+                      <Heart className="w-4 h-4 text-red-500 fill-current" />
+                      <span className="text-sm font-bold text-stone-700">47.2K</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -243,12 +308,43 @@ const UGC = () => {
             
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
-              <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
-                <img
-                  src="/assets/running girl.png"
-                  alt="Social Media Creators"
-                  className="w-full h-80 object-contain rounded-2xl"
-                />
+              <div className="relative bg-white p-4 rounded-3xl shadow-2xl overflow-hidden">
+                <div className="relative">
+                  <img
+                    src="/assets/running girl.png"
+                    alt="Social Media Creators"
+                    className="w-full h-80 object-contain rounded-2xl"
+                  />
+                  
+                  {/* Creator Badge */}
+                  <div className="absolute top-4 left-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-xs font-bold flex items-center space-x-2">
+                    <Users className="w-3 h-3" />
+                    <span>Top 5% Creator</span>
+                  </div>
+                  
+                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl shadow-lg border">
+                    <div className="flex items-center space-x-1">
+                      <TrendingUp className="w-4 h-4 text-green-500" />
+                      <span className="text-xs font-bold text-stone-700">+180% ROI</span>
+                    </div>
+                  </div>
+                  
+                  {/* Social Proof */}
+                  <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm p-3 rounded-xl shadow-lg border">
+                    <div className="text-xs text-stone-500 mb-1">Followers</div>
+                    <div className="text-lg font-bold text-stone-900">2.4M+</div>
+                  </div>
+                  
+                  <div className="absolute bottom-4 right-4 bg-stone-900/90 backdrop-blur-sm px-3 py-2 rounded-lg">
+                    <div className="flex items-center space-x-1">
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                      <span className="text-xs font-semibold text-white">Active Now</span>
+                    </div>
+                  </div>
+                  
+                  {/* Premium glow effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-pink-500/10 rounded-2xl pointer-events-none"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -261,12 +357,45 @@ const UGC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative group lg:order-1">
               <div className="absolute -inset-4 bg-gradient-to-r from-custom-red to-red-600 rounded-3xl blur opacity-20 group-hover:opacity-30 transition duration-1000"></div>
-              <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
-                <img
-                  src="/assets/girlwithflower.png"
-                  alt="Native User-Generated Content"
-                  className="w-full h-80 object-contain rounded-2xl"
-                />
+              <div className="relative bg-white p-4 rounded-3xl shadow-2xl overflow-hidden">
+                <div className="relative">
+                  <img
+                    src="/assets/girlwithflower.png"
+                    alt="Native User-Generated Content"
+                    className="w-full h-80 object-contain rounded-2xl"
+                  />
+                  
+                  {/* Content Quality Badge */}
+                  <div className="absolute top-4 left-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full text-xs font-bold flex items-center space-x-2">
+                    <Award className="w-3 h-3" />
+                    <span>Premium Content</span>
+                  </div>
+                  
+                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl shadow-lg border">
+                    <div className="text-xs text-stone-500">Conversion Rate</div>
+                    <div className="text-sm font-bold text-custom-red">12.3%</div>
+                  </div>
+                  
+                  {/* Platform Icons */}
+                  <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm p-3 rounded-xl shadow-lg border">
+                    <div className="text-xs text-stone-500 mb-2">Native to:</div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-6 h-6 bg-blue-600 rounded text-white flex items-center justify-center text-xs font-bold">f</div>
+                      <div className="w-6 h-6 bg-gradient-to-tr from-purple-500 to-pink-500 rounded text-white flex items-center justify-center text-xs font-bold">ig</div>
+                      <div className="w-6 h-6 bg-black rounded text-white flex items-center justify-center text-xs font-bold">tt</div>
+                    </div>
+                  </div>
+                  
+                  <div className="absolute bottom-4 right-4 bg-stone-900/90 backdrop-blur-sm px-3 py-2 rounded-lg">
+                    <div className="flex items-center space-x-1">
+                      <Sparkles className="w-3 h-3 text-yellow-400" />
+                      <span className="text-xs font-semibold text-white">Viral Ready</span>
+                    </div>
+                  </div>
+                  
+                  {/* Elegant overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-500/5 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+                </div>
               </div>
             </div>
             
